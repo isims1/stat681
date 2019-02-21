@@ -1,0 +1,796 @@
+"id" "make" "model" "year" "class" "trans" "drive" "cyl" "displ" "fuel" "hwy" "cty"
+33566 "Acura" "ILX" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 2 "Premium" 35 24
+33567 "Acura" "ILX" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 2.4 "Premium" 31 22
+33607 "Acura" "ILX Hybrid" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.5 "Premium" 38 39
+33517 "Acura" "RLX" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 6 3.5 "Premium" 31 20
+34596 "Acura" "RLX Hybrid" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 6 3.5 "Premium" 32 28
+34341 "Acura" "TL 2WD" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 6 3.5 "Premium" 29 20
+34342 "Acura" "TL 4WD" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 6 3.7 "Premium" 26 18
+34343 "Acura" "TL 4WD" 2014 "Midsize Cars" "Manual" "All-Wheel Drive" 6 3.7 "Premium" 25 17
+34334 "Acura" "TSX" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 2.4 "Premium" 31 22
+34335 "Acura" "TSX" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 2.4 "Premium" 29 21
+34336 "Acura" "TSX" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 6 3.5 "Premium" 28 19
+34360 "Acura" "TSX Wagon" 2014 "Station Wagons" "Automatic" "Front-Wheel Drive" 4 2.4 "Premium" 30 22
+33448 "Aston Martin" "DB9" 2014 "Minicompact Cars" "Automatic" "Rear-Wheel Drive" 12 5.9 "Premium" 19 13
+33450 "Aston Martin" "Rapide S" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 12 5.9 "Premium" 19 13
+34328 "Aston Martin" "V8 Vantage" 2014 "Two Seaters" "Manual" "Rear-Wheel Drive" 8 4.7 "Premium" 19 13
+34329 "Aston Martin" "V8 Vantage" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 8 4.7 "Premium" 21 14
+34330 "Aston Martin" "V8 Vantage S" 2014 "Two Seaters" "Manual" "Rear-Wheel Drive" 8 4.7 "Premium" 19 13
+34331 "Aston Martin" "V8 Vantage S" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 8 4.7 "Premium" 21 14
+33449 "Aston Martin" "Vanquish" 2014 "Minicompact Cars" "Automatic" "Rear-Wheel Drive" 12 5.9 "Premium" 19 13
+33799 "Audi" "A4" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 2 "Premium" 32 24
+33798 "Audi" "A4 quattro" 2014 "Compact Cars" "Automatic" "All-Wheel Drive" 4 2 "Premium or E85" 29 20
+33800 "Audi" "A4 quattro" 2014 "Compact Cars" "Manual" "All-Wheel Drive" 4 2 "Premium" 32 22
+33783 "Audi" "A5 Cabriolet" 2014 "Subcompact Cars" "Automatic" "Front-Wheel Drive" 4 2 "Premium" 32 24
+33782 "Audi" "A5 Cabriolet quattro" 2014 "Subcompact Cars" "Automatic" "All-Wheel Drive" 4 2 "Premium or E85" 29 20
+33781 "Audi" "A5 quattro" 2014 "Subcompact Cars" "Automatic" "All-Wheel Drive" 4 2 "Premium or E85" 29 20
+33784 "Audi" "A5 quattro" 2014 "Subcompact Cars" "Manual" "All-Wheel Drive" 4 2 "Premium" 32 22
+33834 "Audi" "A6" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2 "Premium" 33 25
+33833 "Audi" "A6 quattro" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 6 3 "Premium" 27 18
+33835 "Audi" "A6 quattro" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 4 2 "Premium" 29 20
+33933 "Audi" "A6 quattro" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 6 3 "Diesel" 38 24
+33825 "Audi" "A7 quattro" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 6 3 "Diesel" 38 24
+33832 "Audi" "A7 quattro" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 6 3 "Premium" 28 18
+33826 "Audi" "A8" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 8 4 "Premium" 28 17
+33831 "Audi" "A8" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 6 3 "Premium" 28 18
+33433 "Audi" "A8 L" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 6 3 "Diesel" 36 24
+33849 "Audi" "A8 L" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 8 4 "Premium" 26 16
+33850 "Audi" "A8 L" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 6 3 "Premium" 28 18
+33851 "Audi" "A8 L" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 12 6.3 "Premium" 21 13
+33441 "Audi" "R8" 2014 "Two Seaters" "Automatic" "All-Wheel Drive" 10 5.2 "Premium" 22 13
+33443 "Audi" "R8" 2014 "Two Seaters" "Automatic" "All-Wheel Drive" 8 4.2 "Premium" 23 14
+33445 "Audi" "R8" 2014 "Two Seaters" "Manual" "All-Wheel Drive" 10 5.2 "Premium" 19 12
+33447 "Audi" "R8" 2014 "Two Seaters" "Manual" "All-Wheel Drive" 8 4.2 "Premium" 20 11
+33440 "Audi" "R8 Spyder" 2014 "Two Seaters" "Automatic" "All-Wheel Drive" 10 5.2 "Premium" 22 13
+33442 "Audi" "R8 Spyder" 2014 "Two Seaters" "Automatic" "All-Wheel Drive" 8 4.2 "Premium" 23 14
+33444 "Audi" "R8 Spyder" 2014 "Two Seaters" "Manual" "All-Wheel Drive" 10 5.2 "Premium" 19 12
+33446 "Audi" "R8 Spyder" 2014 "Two Seaters" "Manual" "All-Wheel Drive" 8 4.2 "Premium" 20 11
+33638 "Audi" "RS 5" 2014 "Subcompact Cars" "Automatic" "All-Wheel Drive" 8 4.2 "Premium" 23 16
+33911 "Audi" "RS 5 Cabriolet" 2014 "Subcompact Cars" "Automatic" "All-Wheel Drive" 8 4.2 "Premium" 22 16
+33830 "Audi" "RS 7" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 8 4 "Premium" 27 16
+33796 "Audi" "S4" 2014 "Compact Cars" "Automatic" "All-Wheel Drive" 6 3 "Premium" 28 18
+33797 "Audi" "S4" 2014 "Compact Cars" "Manual" "All-Wheel Drive" 6 3 "Premium" 26 17
+33778 "Audi" "S5" 2014 "Subcompact Cars" "Automatic" "All-Wheel Drive" 6 3 "Premium" 28 18
+33780 "Audi" "S5" 2014 "Subcompact Cars" "Manual" "All-Wheel Drive" 6 3 "Premium" 26 17
+33779 "Audi" "S5 Cabriolet" 2014 "Subcompact Cars" "Automatic" "All-Wheel Drive" 6 3 "Premium" 26 18
+33829 "Audi" "S6" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 8 4 "Premium" 27 17
+33828 "Audi" "S7" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 8 4 "Premium" 27 17
+33827 "Audi" "S8" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 8 4 "Premium" 26 15
+33639 "Audi" "TT Coupe quattro" 2014 "Subcompact Cars" "Automatic" "All-Wheel Drive" 4 2 "Premium" 31 22
+33613 "Audi" "TT Roadster quattro" 2014 "Two Seaters" "Automatic" "All-Wheel Drive" 4 2 "Premium" 31 22
+33855 "Audi" "allroad quattro" 2014 "Station Wagons" "Automatic" "All-Wheel Drive" 4 2 "Premium or E85" 27 20
+34695 "BMW" "228i" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 4 2 "Premium" 36 23
+34725 "BMW" "228i" 2014 "Subcompact Cars" "Manual" "Rear-Wheel Drive" 4 2 "Premium" 34 22
+34046 "BMW" "320i" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 4 2 "Premium" 36 24
+34158 "BMW" "320i" 2014 "Compact Cars" "Manual" "Rear-Wheel Drive" 4 2 "Premium" 36 23
+34047 "BMW" "320i xDrive" 2014 "Compact Cars" "Automatic" "All-Wheel Drive" 4 2 "Premium" 35 23
+34050 "BMW" "328d" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 4 2 "Diesel" 45 32
+34051 "BMW" "328d xDrive" 2014 "Compact Cars" "Automatic" "All-Wheel Drive" 4 2 "Diesel" 43 31
+34101 "BMW" "328d xDrive Sports Wagon" 2014 "Station Wagons" "Automatic" "All-Wheel Drive" 4 2 "Diesel" 43 31
+34155 "BMW" "328i" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 4 2 "Premium" 35 23
+34156 "BMW" "328i" 2014 "Compact Cars" "Manual" "Rear-Wheel Drive" 4 2 "Premium" 34 22
+34157 "BMW" "328i xDrive" 2014 "Compact Cars" "Automatic" "All-Wheel Drive" 4 2 "Premium" 33 22
+34192 "BMW" "328i xDrive Gran Turismo" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 4 2 "Premium" 33 22
+33522 "BMW" "328i xDrive Sports Wagon" 2014 "Station Wagons" "Automatic" "All-Wheel Drive" 4 2 "Premium" 33 22
+34048 "BMW" "335i" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 6 3 "Premium" 32 22
+34142 "BMW" "335i" 2014 "Compact Cars" "Manual" "Rear-Wheel Drive" 6 3 "Premium" 30 20
+34049 "BMW" "335i xDrive" 2014 "Compact Cars" "Automatic" "All-Wheel Drive" 6 3 "Premium" 30 20
+34159 "BMW" "335i xDrive" 2014 "Compact Cars" "Manual" "All-Wheel Drive" 6 3 "Premium" 28 20
+34096 "BMW" "335i xDrive Gran Turismo" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 6 3 "Premium" 30 20
+34718 "BMW" "428i Convertible" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 4 2 "Premium" 34 23
+34267 "BMW" "428i Coupe" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 4 2 "Premium" 35 23
+34268 "BMW" "428i Coupe" 2014 "Compact Cars" "Manual" "Rear-Wheel Drive" 4 2 "Premium" 34 22
+34857 "BMW" "428i xDrive Convertible" 2014 "Subcompact Cars" "Automatic" "All-Wheel Drive" 4 2 "Premium" 33 21
+34269 "BMW" "428i xDrive Coupe" 2014 "Compact Cars" "Automatic" "All-Wheel Drive" 4 2 "Premium" 33 22
+34783 "BMW" "435i Convertible" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 6 3 "Premium" 30 20
+34270 "BMW" "435i Coupe" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 6 3 "Premium" 32 22
+34271 "BMW" "435i Coupe" 2014 "Compact Cars" "Manual" "Rear-Wheel Drive" 6 3 "Premium" 30 20
+34272 "BMW" "435i xDrive Coupe" 2014 "Compact Cars" "Automatic" "All-Wheel Drive" 6 3 "Premium" 30 20
+34273 "BMW" "435i xDrive Coupe" 2014 "Compact Cars" "Manual" "All-Wheel Drive" 6 3 "Premium" 28 20
+34072 "BMW" "528i" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 4 2 "Premium" 34 23
+34170 "BMW" "528i xDrive" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 4 2 "Premium" 33 22
+34172 "BMW" "535d" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 6 3 "Diesel" 38 26
+34173 "BMW" "535d xDrive" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 6 3 "Diesel" 37 26
+34073 "BMW" "535i" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 6 3 "Premium" 30 20
+34143 "BMW" "535i" 2014 "Midsize Cars" "Manual" "Rear-Wheel Drive" 6 3 "Premium" 30 20
+34193 "BMW" "535i Gran Turismo" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 6 3 "Premium" 28 19
+34171 "BMW" "535i xDrive" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 6 3 "Premium" 29 20
+34097 "BMW" "535i xDrive Gran Turismo" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 6 3 "Premium" 26 18
+34174 "BMW" "550i" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 8 4.4 "Premium" 25 17
+34194 "BMW" "550i Gran Turismo" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 8 4.4 "Premium" 25 16
+34175 "BMW" "550i xDrive" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 8 4.4 "Premium" 24 16
+34195 "BMW" "550i xDrive Gran Turismo" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 8 4.4 "Premium" 24 16
+33484 "BMW" "640i Convertible" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 6 3 "Premium" 30 20
+33483 "BMW" "640i Coupe" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 6 3 "Premium" 32 22
+33487 "BMW" "640i Gran Coupe" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 6 3 "Premium" 30 20
+33511 "BMW" "640i xDrive Convertible" 2014 "Subcompact Cars" "Automatic" "All-Wheel Drive" 6 3 "Premium" 29 20
+33510 "BMW" "640i xDrive Coupe" 2014 "Subcompact Cars" "Automatic" "All-Wheel Drive" 6 3 "Premium" 29 20
+33515 "BMW" "640i xDrive Gran Coupe" 2014 "Compact Cars" "Automatic" "All-Wheel Drive" 6 3 "Premium" 29 20
+33513 "BMW" "650i Convertible" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 8 4.4 "Premium" 25 17
+33512 "BMW" "650i Coupe" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 8 4.4 "Premium" 25 17
+33516 "BMW" "650i Gran Coupe" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 8 4.4 "Premium" 25 17
+33486 "BMW" "650i xDrive Convertible" 2014 "Subcompact Cars" "Automatic" "All-Wheel Drive" 8 4.4 "Premium" 24 16
+33485 "BMW" "650i xDrive Coupe" 2014 "Subcompact Cars" "Automatic" "All-Wheel Drive" 8 4.4 "Premium" 24 16
+33488 "BMW" "650i xDrive Gran Coupe" 2014 "Compact Cars" "Automatic" "All-Wheel Drive" 8 4.4 "Premium" 24 16
+34099 "BMW" "740Li" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 6 3 "Premium" 29 19
+34144 "BMW" "740Li xDrive" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 6 3 "Premium" 28 19
+34098 "BMW" "740i" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 6 3 "Premium" 29 19
+34197 "BMW" "750Li" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 8 4.4 "Premium" 25 16
+34199 "BMW" "750Li xDrive" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 8 4.4 "Premium" 24 16
+34196 "BMW" "750i" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 8 4.4 "Premium" 25 17
+34198 "BMW" "750i xDrive" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 8 4.4 "Premium" 24 16
+34204 "BMW" "760Li" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 12 6 "Premium" 20 13
+34431 "BMW" "ActiveHybrid 3" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 6 3 "Premium" 33 25
+34433 "BMW" "ActiveHybrid 5" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 6 3 "Premium" 30 23
+34438 "BMW" "ActiveHybrid 7L" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 6 3 "Premium" 30 22
+34201 "BMW" "Alpina B7 LWB" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 8 4.4 "Premium" 25 16
+34203 "BMW" "Alpina B7 LWB xDrive" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 8 4.4 "Premium" 24 16
+34200 "BMW" "Alpina B7 SWB" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 8 4.4 "Premium" 25 16
+34202 "BMW" "Alpina B7 SWB xDrive" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 8 4.4 "Premium" 24 16
+34726 "BMW" "M235i" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 6 3 "Premium" 32 22
+34727 "BMW" "M235i" 2014 "Subcompact Cars" "Manual" "Rear-Wheel Drive" 6 3 "Premium" 28 19
+33661 "BMW" "M5" 2014 "Midsize Cars" "Manual" "Rear-Wheel Drive" 8 4.4 "Premium" 22 15
+33662 "BMW" "M5" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 8 4.4 "Premium" 20 14
+33544 "BMW" "M6 Convertible" 2014 "Subcompact Cars" "Manual" "Rear-Wheel Drive" 8 4.4 "Premium" 22 15
+33545 "BMW" "M6 Convertible" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 8 4.4 "Premium" 20 14
+33542 "BMW" "M6 Coupe" 2014 "Subcompact Cars" "Manual" "Rear-Wheel Drive" 8 4.4 "Premium" 22 15
+33543 "BMW" "M6 Coupe" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 8 4.4 "Premium" 20 14
+33546 "BMW" "M6 Gran Coupe" 2014 "Compact Cars" "Manual" "Rear-Wheel Drive" 8 4.4 "Premium" 22 15
+33547 "BMW" "M6 Gran Coupe" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 8 4.4 "Premium" 20 14
+33552 "BMW" "X1 sDrive28i" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 4 2 "Premium" 34 23
+33521 "BMW" "X1 xDrive28i" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 4 2 "Premium" 33 22
+33491 "BMW" "X1 xDrive35i" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 6 3 "Premium" 27 18
+33479 "BMW" "Z4 sDrive28i" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 4 2 "Premium" 33 22
+33535 "BMW" "Z4 sDrive28i" 2014 "Two Seaters" "Manual" "Rear-Wheel Drive" 4 2 "Premium" 34 22
+33480 "BMW" "Z4 sDrive35i" 2014 "Two Seaters" "Manual" "Rear-Wheel Drive" 6 3 "Premium" 26 19
+33481 "BMW" "Z4 sDrive35i" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 6 3 "Premium" 24 17
+33482 "BMW" "Z4 sDrive35is" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 6 3 "Premium" 24 17
+33514 "Bentley" "Continental GT" 2014 "Compact Cars" "Automatic" "All-Wheel Drive" 12 6 "Premium or E85" 21 12
+33919 "Bentley" "Continental GT" 2014 "Compact Cars" "Automatic" "All-Wheel Drive" 8 4 "Premium" 24 15
+33541 "Bentley" "Continental GT Speed Convertible" 2014 "Subcompact Cars" "Automatic" "All-Wheel Drive" 12 6 "Premium or E85" 20 12
+33540 "Bentley" "Continental GTC" 2014 "Subcompact Cars" "Automatic" "All-Wheel Drive" 12 6 "Premium or E85" 20 12
+33785 "Bentley" "Continental GTC" 2014 "Subcompact Cars" "Automatic" "All-Wheel Drive" 8 4 "Premium" 24 14
+33548 "Bentley" "Flying Spur" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 12 6 "Premium or E85" 20 12
+34310 "Bentley" "Mulsanne" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 8 6.8 "Premium" 18 11
+33614 "Bugatti" "Veyron" 2014 "Two Seaters" "Automatic" "All-Wheel Drive" 16 8 "Premium" 15 8
+33836 "Buick" "LaCrosse" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 6 3.6 "Gasoline or E85" 28 18
+34176 "Buick" "LaCrosse" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 6 3.6 "Regular" 28 18
+33839 "Buick" "LaCrosse AWD" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 6 3.6 "Gasoline or E85" 26 17
+33838 "Buick" "LaCrosse eAssist" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2.4 "Regular" 36 25
+34177 "Buick" "Regal" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2 "Regular" 30 21
+34178 "Buick" "Regal" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2.4 "Regular" 31 19
+34179 "Buick" "Regal" 2014 "Midsize Cars" "Manual" "Front-Wheel Drive" 4 2 "Regular" 31 20
+34283 "Buick" "Regal AWD" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 4 2 "Regular" 27 19
+33837 "Buick" "Regal eAssist" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2.4 "Regular" 36 25
+33641 "Buick" "Verano" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 2 "Regular" 31 20
+33801 "Buick" "Verano" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 2 "Regular" 30 21
+33802 "Buick" "Verano" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 2.4 "Regular" 32 21
+33642 "Cadillac" "ATS" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 4 2.5 "Regular" 33 22
+33643 "Cadillac" "ATS" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 4 2 "Regular" 31 21
+33805 "Cadillac" "ATS" 2014 "Compact Cars" "Manual" "Rear-Wheel Drive" 4 2 "Regular" 30 19
+33806 "Cadillac" "ATS" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 6 3.6 "Regular" 28 18
+33803 "Cadillac" "ATS AWD" 2014 "Compact Cars" "Automatic" "All-Wheel Drive" 6 3.6 "Regular" 26 18
+33804 "Cadillac" "ATS AWD" 2014 "Compact Cars" "Automatic" "All-Wheel Drive" 4 2 "Regular" 29 20
+33842 "Cadillac" "CTS" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 6 3.6 "Regular" 27 18
+34074 "Cadillac" "CTS" 2014 "Midsize Cars" "Manual" "Rear-Wheel Drive" 8 6.2 "Premium" 19 14
+34076 "Cadillac" "CTS" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 8 6.2 "Premium" 18 12
+33841 "Cadillac" "CTS AWD" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 6 3.6 "Regular" 26 18
+33935 "Cadillac" "CTS Sedan" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 4 2 "Regular" 30 20
+34434 "Cadillac" "CTS Sedan" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 6 3.6 "Regular" 29 18
+34558 "Cadillac" "CTS Sedan" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 6 3.6 "Premium" 24 16
+33840 "Cadillac" "CTS Sedan AWD" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 6 3.6 "Regular" 26 18
+33934 "Cadillac" "CTS Sedan AWD" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 4 2 "Regular" 28 19
+34075 "Cadillac" "CTS V" 2014 "Midsize Cars" "Manual" "Rear-Wheel Drive" 8 6.2 "Premium" 19 14
+34077 "Cadillac" "CTS V" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 8 6.2 "Premium" 18 12
+33856 "Cadillac" "CTS Wagon" 2014 "Station Wagons" "Automatic" "Rear-Wheel Drive" 6 3 "Regular" 26 18
+33859 "Cadillac" "CTS Wagon" 2014 "Station Wagons" "Automatic" "Rear-Wheel Drive" 6 3.6 "Regular" 26 18
+34102 "Cadillac" "CTS Wagon" 2014 "Station Wagons" "Manual" "Rear-Wheel Drive" 8 6.2 "Premium" 19 14
+34103 "Cadillac" "CTS Wagon" 2014 "Station Wagons" "Automatic" "Rear-Wheel Drive" 8 6.2 "Premium" 18 12
+33857 "Cadillac" "CTS Wagon AWD" 2014 "Station Wagons" "Automatic" "All-Wheel Drive" 6 3 "Regular" 26 18
+33858 "Cadillac" "CTS Wagon AWD" 2014 "Station Wagons" "Automatic" "All-Wheel Drive" 6 3.6 "Regular" 26 18
+34770 "Cadillac" "ELR" 2014 "Subcompact Cars" "Automatic" "Front-Wheel Drive" 4 1.4 "Premium Gas or Electricity" 35 31
+34205 "Cadillac" "XTS" 2014 "Large Cars" "Automatic" "Front-Wheel Drive" 6 3.6 "Regular" 28 18
+33676 "Cadillac" "XTS AWD" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 6 3.6 "Regular" 26 17
+33852 "Cadillac" "XTS AWD" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 6 3.6 "Premium" 24 16
+33807 "Chevrolet" "Camaro" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 8 6.2 "Regular" 24 15
+33808 "Chevrolet" "Camaro" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 6 3.6 "Regular" 30 19
+33809 "Chevrolet" "Camaro" 2014 "Compact Cars" "Manual" "Rear-Wheel Drive" 6 3.6 "Regular" 28 17
+33811 "Chevrolet" "Camaro" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 6 3.6 "Regular" 27 18
+33812 "Chevrolet" "Camaro" 2014 "Compact Cars" "Manual" "Rear-Wheel Drive" 8 6.2 "Regular" 24 16
+34052 "Chevrolet" "Camaro" 2014 "Compact Cars" "Manual" "Rear-Wheel Drive" 8 6.2 "Premium" 19 14
+34053 "Chevrolet" "Camaro" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 8 6.2 "Premium" 18 12
+34793 "Chevrolet" "Camaro" 2014 "Compact Cars" "Manual" "Rear-Wheel Drive" 8 7 "Premium" 19 13
+33907 "Chevrolet" "Corvette" 2014 "Two Seaters" "Manual" "Rear-Wheel Drive" 8 6.2 "Premium" 29 17
+34259 "Chevrolet" "Corvette" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 8 6.2 "Premium" 28 16
+33578 "Chevrolet" "Cruze" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2 "Diesel" 46 27
+33664 "Chevrolet" "Cruze" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 1.4 "Regular" 38 26
+33665 "Chevrolet" "Cruze" 2014 "Midsize Cars" "Manual" "Front-Wheel Drive" 4 1.8 "Regular" 36 25
+33666 "Chevrolet" "Cruze" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 1.8 "Regular" 35 22
+34078 "Chevrolet" "Cruze" 2014 "Midsize Cars" "Manual" "Front-Wheel Drive" 4 1.4 "Regular" 38 26
+33663 "Chevrolet" "Cruze Eco" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 1.4 "Regular" 39 26
+34079 "Chevrolet" "Cruze Eco" 2014 "Midsize Cars" "Manual" "Front-Wheel Drive" 4 1.4 "Regular" 42 28
+33584 "Chevrolet" "Impala" 2014 "Large Cars" "Automatic" "Front-Wheel Drive" 4 2.5 "Regular" 31 21
+33951 "Chevrolet" "Impala" 2014 "Large Cars" "Automatic" "Front-Wheel Drive" 6 3.6 "Regular" 28 18
+33979 "Chevrolet" "Impala" 2014 "Large Cars" "Automatic" "Front-Wheel Drive" 6 3.6 "Gasoline or E85" 29 19
+33854 "Chevrolet" "Impala Limited" 2014 "Large Cars" "Automatic" "Front-Wheel Drive" 6 3.6 "Gasoline or E85" 30 18
+33853 "Chevrolet" "Impala eAssist" 2014 "Large Cars" "Automatic" "Front-Wheel Drive" 4 2.4 "Regular" 35 25
+33843 "Chevrolet" "Malibu" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2 "Regular" 30 21
+34311 "Chevrolet" "Malibu" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2.5 "Regular" 36 25
+33844 "Chevrolet" "Malibu eAssist" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2.4 "Regular" 36 25
+34293 "Chevrolet" "SS" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 8 6.2 "Regular" 21 14
+33810 "Chevrolet" "Sonic" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.8 "Regular" 35 25
+33920 "Chevrolet" "Sonic" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 1.8 "Regular" 35 26
+34054 "Chevrolet" "Sonic" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 1.4 "Regular" 40 29
+34055 "Chevrolet" "Sonic" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.4 "Regular" 37 27
+33845 "Chevrolet" "Sonic 5" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 1.8 "Regular" 35 25
+33936 "Chevrolet" "Sonic 5" 2014 "Midsize Cars" "Manual" "Front-Wheel Drive" 4 1.8 "Regular" 35 26
+34080 "Chevrolet" "Sonic 5" 2014 "Midsize Cars" "Manual" "Front-Wheel Drive" 4 1.4 "Regular" 40 29
+34081 "Chevrolet" "Sonic 5" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 1.4 "Regular" 37 27
+34082 "Chevrolet" "Sonic 5 RS" 2014 "Midsize Cars" "Manual" "Front-Wheel Drive" 4 1.4 "Regular" 34 27
+34083 "Chevrolet" "Sonic 5 RS" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 1.4 "Regular" 33 25
+34056 "Chevrolet" "Sonic RS" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 1.4 "Regular" 34 27
+34057 "Chevrolet" "Sonic RS" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.4 "Regular" 33 25
+33786 "Chevrolet" "Spark" 2014 "Subcompact Cars" "Automatic" "Front-Wheel Drive" 4 1.2 "Regular" 39 30
+33787 "Chevrolet" "Spark" 2014 "Subcompact Cars" "Manual" "Front-Wheel Drive" 4 1.2 "Regular" 39 31
+33640 "Chevrolet" "Spark EV" 2014 "Subcompact Cars" "Automatic" "Front-Wheel Drive" NA NA "Electricity" 109 128
+33900 "Chevrolet" "Volt" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.4 "Premium Gas or Electricity" 40 35
+34180 "Chrysler" "200" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2.4 "Regular" 30 21
+34181 "Chrysler" "200" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2.4 "Regular" 31 20
+34182 "Chrysler" "200" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 6 3.6 "Gasoline or E85" 29 19
+34160 "Chrysler" "200 Convertible" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 2.4 "Regular" 29 18
+34161 "Chrysler" "200 Convertible" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 6 3.6 "Gasoline or E85" 29 19
+34206 "Chrysler" "300" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 8 5.7 "Midgrade" 25 15
+34294 "Chrysler" "300" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 6 3.6 "Regular" 31 19
+34295 "Chrysler" "300" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 6 3.6 "Gasoline or E85" 31 19
+34207 "Chrysler" "300 AWD" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 6 3.6 "Regular" 27 18
+34208 "Chrysler" "300 AWD" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 6 3.6 "Gasoline or E85" 27 18
+34209 "Chrysler" "300 AWD" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 8 5.7 "Midgrade" 23 15
+34296 "Chrysler" "300 SRT8" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 8 6.4 "Premium" 23 14
+34183 "Dodge" "Avenger" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2.4 "Regular" 30 21
+34184 "Dodge" "Avenger" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2.4 "Regular" 31 20
+34185 "Dodge" "Avenger" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 6 3.6 "Gasoline or E85" 29 19
+34186 "Dodge" "Challenger" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 6 3.6 "Midgrade" 27 18
+34187 "Dodge" "Challenger" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 8 5.7 "Midgrade" 25 15
+34284 "Dodge" "Challenger" 2014 "Midsize Cars" "Manual" "Rear-Wheel Drive" 8 5.7 "Premium" 23 15
+34285 "Dodge" "Challenger SRT8" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 8 6.4 "Premium" 23 14
+34286 "Dodge" "Challenger SRT8" 2014 "Midsize Cars" "Manual" "Rear-Wheel Drive" 8 6.4 "Premium" 23 14
+34210 "Dodge" "Charger" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 6 3.6 "Regular" 27 18
+34211 "Dodge" "Charger" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 6 3.6 "Gasoline or E85" 27 18
+34212 "Dodge" "Charger" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 8 5.7 "Midgrade" 25 15
+34297 "Dodge" "Charger" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 6 3.6 "Regular" 31 19
+34298 "Dodge" "Charger" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 6 3.6 "Gasoline or E85" 31 19
+34213 "Dodge" "Charger AWD" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 6 3.6 "Regular" 27 18
+34214 "Dodge" "Charger AWD" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 6 3.6 "Gasoline or E85" 27 18
+34215 "Dodge" "Charger AWD" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 8 5.7 "Midgrade" 23 15
+34299 "Dodge" "Charger SRT8" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 8 6.4 "Premium" 23 14
+34470 "Dodge" "Dart" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2.4 "Regular" 35 23
+34473 "Dodge" "Dart" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2 "Gasoline or E85" 34 24
+34474 "Dodge" "Dart" 2014 "Midsize Cars" "Manual" "Front-Wheel Drive" 4 2 "Regular" 36 25
+34559 "Dodge" "Dart" 2014 "Midsize Cars" "Manual" "Front-Wheel Drive" 4 2.4 "Regular" 35 22
+34787 "Dodge" "Dart" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 1.4 "Premium" 37 27
+34471 "Dodge" "Dart Aero" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 1.4 "Premium" 40 28
+34472 "Dodge" "Dart Aero" 2014 "Midsize Cars" "Manual" "Front-Wheel Drive" 4 1.4 "Premium" 41 28
+34475 "Dodge" "Dart GT" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2.4 "Regular" 31 22
+34476 "Dodge" "Dart GT" 2014 "Midsize Cars" "Manual" "Front-Wheel Drive" 4 2.4 "Regular" 33 23
+33765 "Ferrari" "458 Italia" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 8 4.5 "Premium" 17 13
+33766 "Ferrari" "458 Italia" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 8 4.5 "Premium" 17 13
+33767 "Ferrari" "458 Spider" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 8 4.5 "Premium" 17 13
+33768 "Ferrari" "458 Spider" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 8 4.5 "Premium" 17 13
+33776 "Ferrari" "California" 2014 "Minicompact Cars" "Automatic" "Rear-Wheel Drive" 8 4.3 "Premium" 19 13
+33777 "Ferrari" "California" 2014 "Minicompact Cars" "Automatic" "Rear-Wheel Drive" 8 4.3 "Premium" 19 14
+33769 "Ferrari" "F12" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 12 6.3 "Premium" 16 11
+33770 "Ferrari" "F12" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 12 6.3 "Premium" 16 12
+33846 "Ferrari" "FF" 2014 "Midsize Cars" "Automatic" "Part-time 4-Wheel Drive" 12 6.3 "Premium" 16 11
+33847 "Ferrari" "FF" 2014 "Midsize Cars" "Automatic" "Part-time 4-Wheel Drive" 12 6.3 "Premium" 17 11
+34332 "Fiat" "500" 2014 "Minicompact Cars" "Manual" "Front-Wheel Drive" 4 1.4 "Premium" 34 28
+34549 "Fiat" "500" 2014 "Minicompact Cars" "Automatic" "Front-Wheel Drive" 4 1.4 "Premium" 34 27
+34550 "Fiat" "500" 2014 "Minicompact Cars" "Manual" "Front-Wheel Drive" 4 1.4 "Premium" 40 31
+34333 "Fiat" "500 Abarth" 2014 "Minicompact Cars" "Manual" "Front-Wheel Drive" 4 1.4 "Premium" 34 28
+33952 "Fiat" "500 L" 2014 "Station Wagons" "Automatic" "Front-Wheel Drive" 4 1.4 "Premium" 33 24
+33953 "Fiat" "500 L" 2014 "Station Wagons" "Manual" "Front-Wheel Drive" 4 1.4 "Premium" 33 25
+34392 "Fiat" "500e" 2014 "Minicompact Cars" "Automatic" "Front-Wheel Drive" NA NA "Electricity" 108 122
+34662 "Ford" "C-MAX Energi Plug-in Hybrid" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2 "Regular Gas and Electricity" 41 44
+34696 "Ford" "C-MAX Hybrid FWD" 2014 "Large Cars" "Automatic" "Front-Wheel Drive" 4 2 "Regular" 40 45
+33605 "Ford" "Fiesta FWD" 2014 "Subcompact Cars" "Manual" "Front-Wheel Drive" 4 1.6 "Regular" 38 27
+33606 "Ford" "Fiesta FWD" 2014 "Subcompact Cars" "Automatic" "Front-Wheel Drive" 4 1.6 "Regular" 39 29
+33912 "Ford" "Fiesta SFE FWD" 2014 "Subcompact Cars" "Automatic" "Front-Wheel Drive" 4 1.6 "Regular" 41 30
+34468 "Ford" "Fiesta SFE FWD" 2014 "Subcompact Cars" "Manual" "Front-Wheel Drive" 3 1 "Regular" 45 32
+33813 "Ford" "Fiesta ST FWD" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 1.6 "Regular" 35 26
+34130 "Ford" "Focus Electric" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" NA NA "Electricity" 99 110
+33998 "Ford" "Focus FWD" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 2 "Regular" 37 27
+33999 "Ford" "Focus FWD" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 2 "Regular" 37 27
+34000 "Ford" "Focus FWD" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 2 "Regular" 36 26
+34001 "Ford" "Focus FWD" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 2 "Regular" 32 23
+34002 "Ford" "Focus FWD FFV" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 2 "Gasoline or E85" 37 26
+34003 "Ford" "Focus FWD FFV" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 2 "Gasoline or E85" 37 26
+34004 "Ford" "Focus FWD FFV" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 2 "Gasoline or E85" 36 26
+34058 "Ford" "Focus SFE FWD FFV" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 2 "Gasoline or E85" 40 28
+34086 "Ford" "Fusion AWD" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 4 2 "Regular" 31 22
+34089 "Ford" "Fusion Energi Plug-in Hybrid" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2 "Regular Gas and Electricity" 41 44
+34084 "Ford" "Fusion FWD" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 1.5 "Regular" 36 23
+34085 "Ford" "Fusion FWD" 2014 "Midsize Cars" "Manual" "Front-Wheel Drive" 4 1.6 "Regular" 37 25
+34087 "Ford" "Fusion FWD" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2 "Regular" 33 22
+34088 "Ford" "Fusion FWD" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2.5 "Regular" 34 22
+34661 "Ford" "Fusion FWD" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 1.5 "Regular" 37 25
+34312 "Ford" "Fusion Hybrid FWD" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2 "Regular" 47 47
+33406 "Ford" "Mustang" 2014 "Subcompact Cars" "Manual" "Rear-Wheel Drive" 6 3.7 "Regular" 29 19
+33407 "Ford" "Mustang" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 6 3.7 "Regular" 31 19
+33408 "Ford" "Mustang" 2014 "Subcompact Cars" "Manual" "Rear-Wheel Drive" 8 5.8 "Premium" 24 15
+33409 "Ford" "Mustang" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 8 5 "Regular" 25 18
+33431 "Ford" "Mustang" 2014 "Subcompact Cars" "Manual" "Rear-Wheel Drive" 8 5 "Regular" 26 15
+33430 "Ford" "Mustang Convertible" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 6 3.7 "Regular" 30 19
+34616 "Ford" "Special Service Police FWD" 2014 "Large Cars" "Automatic" "Front-Wheel Drive" 4 2 "Regular" 30 20
+33677 "Ford" "Taurus AWD" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 6 3.5 "Regular" 25 17
+33681 "Ford" "Taurus AWD" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 6 3.5 "Regular" 26 18
+33680 "Ford" "Taurus AWD FFV" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 6 3.5 "Gasoline or E85" 26 18
+33678 "Ford" "Taurus FWD" 2014 "Large Cars" "Automatic" "Front-Wheel Drive" 4 2 "Regular" 32 22
+33682 "Ford" "Taurus FWD" 2014 "Large Cars" "Automatic" "Front-Wheel Drive" 6 3.5 "Regular" 29 19
+33679 "Ford" "Taurus FWD FFV" 2014 "Large Cars" "Automatic" "Front-Wheel Drive" 6 3.5 "Gasoline or E85" 29 19
+34313 "Honda" "Accord" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2.4 "Regular" 34 26
+34314 "Honda" "Accord" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 6 3.5 "Regular" 32 21
+34315 "Honda" "Accord" 2014 "Midsize Cars" "Manual" "Front-Wheel Drive" 6 3.5 "Regular" 28 18
+34344 "Honda" "Accord" 2014 "Midsize Cars" "Manual" "Front-Wheel Drive" 4 2.4 "Regular" 34 24
+34345 "Honda" "Accord" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2.4 "Regular" 36 27
+34346 "Honda" "Accord" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 6 3.5 "Regular" 34 21
+34395 "Honda" "Accord Hybrid" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2 "Regular" 45 50
+33557 "Honda" "Accord Plug-in Hybrid" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2 "Regular Gas and Electricity" 46 47
+34426 "Honda" "CR-Z" 2014 "Two Seaters" "Automatic" "Front-Wheel Drive" 4 1.5 "Regular" 39 36
+34427 "Honda" "CR-Z" 2014 "Two Seaters" "Manual" "Front-Wheel Drive" 4 1.5 "Regular" 38 31
+34772 "Honda" "Civic" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.8 "Regular" 39 30
+34773 "Honda" "Civic" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 2.4 "Premium" 31 22
+34784 "Honda" "Civic" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.8 "Regular" 38 29
+34785 "Honda" "Civic" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 1.8 "Regular" 36 28
+34774 "Honda" "Civic HF" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.8 "Regular" 41 31
+34719 "Honda" "Civic Hybrid" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.5 "Regular" 47 44
+34728 "Honda" "Civic Natural Gas" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.8 "CNG" 38 27
+33905 "Honda" "Fit EV" 2014 "Station Wagons" "Automatic" "Front-Wheel Drive" NA NA "Electricity" 105 132
+34337 "Honda" "Insight" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.3 "Regular" 44 41
+34338 "Honda" "Insight" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.3 "Regular" 44 41
+34588 "Hyundai" "Accent" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.6 "Regular" 37 27
+34589 "Hyundai" "Accent" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 1.6 "Regular" 38 27
+34562 "Hyundai" "Azera" 2014 "Large Cars" "Automatic" "Front-Wheel Drive" 6 3.3 "Regular" 29 19
+34599 "Hyundai" "Elantra" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 1.8 "Regular" 38 28
+34601 "Hyundai" "Elantra" 2014 "Midsize Cars" "Manual" "Front-Wheel Drive" 4 1.8 "Regular" 37 27
+34602 "Hyundai" "Elantra" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2 "Regular" 35 24
+34603 "Hyundai" "Elantra" 2014 "Midsize Cars" "Manual" "Front-Wheel Drive" 4 2 "Regular" 34 24
+34604 "Hyundai" "Elantra Coupe" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2 "Regular" 34 24
+34560 "Hyundai" "Elantra GT" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2 "Regular" 33 24
+34561 "Hyundai" "Elantra GT" 2014 "Midsize Cars" "Manual" "Front-Wheel Drive" 4 2 "Regular" 34 24
+34600 "Hyundai" "Elantra Limited" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 1.8 "Regular" 37 27
+33585 "Hyundai" "Equus" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 8 5 "Premium" 23 15
+34563 "Hyundai" "Genesis" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 6 3.8 "Regular" 27 18
+34584 "Hyundai" "Genesis Coupe" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 4 2 "Premium" 27 17
+34585 "Hyundai" "Genesis Coupe" 2014 "Subcompact Cars" "Manual" "Rear-Wheel Drive" 4 2 "Premium" 27 19
+34586 "Hyundai" "Genesis Coupe" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 6 3.8 "Premium" 25 16
+34587 "Hyundai" "Genesis Coupe" 2014 "Subcompact Cars" "Manual" "Rear-Wheel Drive" 6 3.8 "Premium" 24 16
+34564 "Hyundai" "Genesis R Spec" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 8 5 "Premium" 23 15
+34456 "Hyundai" "Sonata" 2014 "Large Cars" "Automatic" "Front-Wheel Drive" 4 2.4 "Regular" 35 24
+34490 "Hyundai" "Sonata" 2014 "Large Cars" "Automatic" "Front-Wheel Drive" 4 2 "Regular" 32 21
+34597 "Hyundai" "Sonata Hybrid" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2.4 "Regular" 40 36
+34598 "Hyundai" "Sonata Hybrid Limited" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2.4 "Regular" 40 36
+34553 "Hyundai" "Veloster" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.6 "Regular" 31 24
+34554 "Hyundai" "Veloster" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 1.6 "Regular" 33 24
+34590 "Hyundai" "Veloster" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.6 "Regular" 36 28
+34591 "Hyundai" "Veloster" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 1.6 "Regular" 35 26
+33938 "Infiniti" "Q50" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 6 3.7 "Premium" 29 20
+33940 "Infiniti" "Q50 AWD" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 6 3.7 "Premium" 27 19
+34059 "Infiniti" "Q50 Hybrid" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 6 3.5 "Premium" 36 29
+34061 "Infiniti" "Q50 Hybrid AWD" 2014 "Compact Cars" "Automatic" "All-Wheel Drive" 6 3.5 "Premium" 35 28
+34060 "Infiniti" "Q50S Hybrid" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 6 3.5 "Premium" 34 28
+34062 "Infiniti" "Q50S Hybrid AWD" 2014 "Compact Cars" "Automatic" "All-Wheel Drive" 6 3.5 "Premium" 31 27
+33937 "Infiniti" "Q50a" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 6 3.7 "Premium" 30 20
+33939 "Infiniti" "Q50a AWD" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 6 3.7 "Premium" 27 19
+34132 "Infiniti" "Q60 AWD Coupe" 2014 "Subcompact Cars" "Automatic" "All-Wheel Drive" 6 3.7 "Premium" 25 18
+34133 "Infiniti" "Q60 Convertible" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 6 3.7 "Premium" 26 18
+34134 "Infiniti" "Q60 Convertible" 2014 "Subcompact Cars" "Manual" "Rear-Wheel Drive" 6 3.7 "Premium" 24 16
+34135 "Infiniti" "Q60 Coupe" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 6 3.7 "Premium" 27 19
+34136 "Infiniti" "Q60 Coupe" 2014 "Subcompact Cars" "Manual" "Rear-Wheel Drive" 6 3.7 "Premium" 25 17
+34605 "Infiniti" "Q70" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 8 5.6 "Premium" 24 16
+34608 "Infiniti" "Q70" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 6 3.7 "Premium" 26 18
+34606 "Infiniti" "Q70 AWD" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 8 5.6 "Premium" 23 16
+34609 "Infiniti" "Q70 AWD" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 6 3.7 "Premium" 24 17
+34607 "Infiniti" "Q70 Hybrid" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 6 3.5 "Premium" 34 29
+34145 "Infiniti" "QX50" 2014 "Station Wagons" "Automatic" "Rear-Wheel Drive" 6 3.7 "Premium" 25 17
+34146 "Infiniti" "QX50 AWD" 2014 "Station Wagons" "Automatic" "All-Wheel Drive" 6 3.7 "Premium" 24 17
+33615 "Jaguar" "F-Type Convertible" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 6 3 "Premium" 28 20
+33616 "Jaguar" "F-Type S Convertible" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 6 3 "Premium" 27 19
+33559 "Jaguar" "F-Type V8 S Convertible" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 8 5 "Premium" 23 16
+34091 "Jaguar" "XF" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 4 2 "Premium" 30 19
+34188 "Jaguar" "XF" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 8 5 "Premium" 23 15
+34189 "Jaguar" "XF AWD" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 6 3 "Premium" 26 16
+34347 "Jaguar" "XF FFV" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 8 5 "Premium or E85" 23 15
+34348 "Jaguar" "XF FFV" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 6 3 "Premium or E85" 28 17
+34216 "Jaguar" "XJ" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 8 5 "Premium" 23 15
+34218 "Jaguar" "XJ AWD" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 6 3 "Premium" 24 16
+34350 "Jaguar" "XJ FFV" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 8 5 "Premium or E85" 23 15
+34352 "Jaguar" "XJ FFV" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 6 3 "Premium or E85" 27 18
+34217 "Jaguar" "XJL" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 8 5 "Premium" 23 15
+34219 "Jaguar" "XJL AWD" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 6 3 "Premium" 24 16
+34351 "Jaguar" "XJL FFV" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 8 5 "Premium or E85" 23 15
+34353 "Jaguar" "XJL FFV" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 6 3 "Premium or E85" 27 17
+33565 "Jaguar" "XK" 2014 "Minicompact Cars" "Automatic" "Rear-Wheel Drive" 8 5 "Premium" 22 15
+33603 "Jaguar" "XK" 2014 "Minicompact Cars" "Automatic" "Rear-Wheel Drive" 8 5 "Premium" 24 16
+33564 "Jaguar" "XK Convertible" 2014 "Minicompact Cars" "Automatic" "Rear-Wheel Drive" 8 5 "Premium" 22 16
+33604 "Jaguar" "XK Convertible" 2014 "Minicompact Cars" "Automatic" "Rear-Wheel Drive" 8 5 "Premium" 22 15
+33492 "Kia" "Cadenza" 2014 "Large Cars" "Automatic" "Front-Wheel Drive" 6 3.3 "Regular" 28 19
+33489 "Kia" "Forte" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2 "Regular" 36 24
+33490 "Kia" "Forte" 2014 "Midsize Cars" "Manual" "Front-Wheel Drive" 4 2 "Regular" 35 24
+33519 "Kia" "Forte" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 1.8 "Regular" 36 25
+33520 "Kia" "Forte" 2014 "Midsize Cars" "Manual" "Front-Wheel Drive" 4 1.8 "Regular" 37 25
+34617 "Kia" "Forte 5" 2014 "Large Cars" "Automatic" "Front-Wheel Drive" 4 1.6 "Regular" 29 21
+34618 "Kia" "Forte 5" 2014 "Large Cars" "Manual" "Front-Wheel Drive" 4 1.6 "Regular" 29 21
+34619 "Kia" "Forte 5" 2014 "Large Cars" "Automatic" "Front-Wheel Drive" 4 2 "Regular" 34 24
+34620 "Kia" "Forte 5" 2014 "Large Cars" "Manual" "Front-Wheel Drive" 4 2 "Regular" 34 24
+33518 "Kia" "Forte Eco" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 1.8 "Regular" 35 26
+34592 "Kia" "Forte Koup" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.6 "Regular" 30 22
+34593 "Kia" "Forte Koup" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 1.6 "Regular" 29 22
+34594 "Kia" "Forte Koup" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 2 "Regular" 34 25
+34595 "Kia" "Forte Koup" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 2 "Regular" 33 24
+34435 "Kia" "Optima" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2 "Regular" 31 20
+34436 "Kia" "Optima" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2.4 "Regular" 34 23
+34610 "Kia" "Optima Hybrid" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2.4 "Regular" 40 36
+34611 "Kia" "Optima Hybrid EX" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2.4 "Regular" 39 35
+34556 "Kia" "Rio" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.6 "Regular" 37 27
+34557 "Kia" "Rio" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 1.6 "Regular" 37 27
+34555 "Kia" "Rio Eco" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.6 "Regular" 37 28
+34491 "Kia" "Soul" 2014 "Station Wagons" "Automatic" "Front-Wheel Drive" 4 1.6 "Regular" 30 24
+34492 "Kia" "Soul" 2014 "Station Wagons" "Manual" "Front-Wheel Drive" 4 1.6 "Regular" 30 24
+34494 "Kia" "Soul" 2014 "Station Wagons" "Automatic" "Front-Wheel Drive" 4 2 "Regular" 31 23
+34493 "Kia" "Soul ECO dynamics" 2014 "Station Wagons" "Automatic" "Front-Wheel Drive" 4 2 "Regular" 31 24
+33775 "Lamborghini" "Aventador Coupe" 2014 "Two Seaters" "Automatic" "All-Wheel Drive" 12 6.5 "Premium" 18 11
+33617 "Lamborghini" "Aventador Roadster" 2014 "Two Seaters" "Automatic" "All-Wheel Drive" 12 6.5 "Premium" 16 10
+33618 "Lamborghini" "Aventador Veneno Coupe" 2014 "Two Seaters" "Automatic" "All-Wheel Drive" 12 6.5 "Premium" 17 11
+33771 "Lamborghini" "Gallardo Coupe" 2014 "Two Seaters" "Automatic" "All-Wheel Drive" 10 5.2 "Premium" 20 13
+33773 "Lamborghini" "Gallardo Coupe" 2014 "Two Seaters" "Manual" "All-Wheel Drive" 10 5.2 "Premium" 20 12
+33772 "Lamborghini" "Gallardo Spyder" 2014 "Two Seaters" "Automatic" "All-Wheel Drive" 10 5.2 "Premium" 20 13
+33774 "Lamborghini" "Gallardo Spyder" 2014 "Two Seaters" "Manual" "All-Wheel Drive" 10 5.2 "Premium" 20 12
+34546 "Lexus" "CT 200h" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.8 "Regular" 40 43
+34481 "Lexus" "ES 300h" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2.5 "Regular" 39 40
+34482 "Lexus" "ES 350" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 6 3.5 "Regular" 31 21
+34517 "Lexus" "GS 350" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 6 3.5 "Premium" 29 19
+34483 "Lexus" "GS 350 AWD" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 6 3.5 "Premium" 26 19
+34484 "Lexus" "GS 450h" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 6 3.5 "Premium" 34 29
+33646 "Lexus" "IS 250" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 6 2.5 "Premium" 30 21
+33647 "Lexus" "IS 250 AWD" 2014 "Compact Cars" "Automatic" "All-Wheel Drive" 6 2.5 "Premium" 27 20
+34429 "Lexus" "IS 250 C" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 6 2.5 "Premium" 30 21
+33644 "Lexus" "IS 350" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 6 3.5 "Premium" 28 19
+33645 "Lexus" "IS 350 AWD" 2014 "Compact Cars" "Automatic" "All-Wheel Drive" 6 3.5 "Premium" 26 19
+34428 "Lexus" "IS 350 C" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 6 3.5 "Premium" 27 19
+34469 "Lexus" "IS F" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 8 5 "Premium" 23 16
+34477 "Lexus" "LS 460" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 8 4.6 "Premium" 24 16
+34478 "Lexus" "LS 460 AWD" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 8 4.6 "Premium" 23 16
+34479 "Lexus" "LS 460 L" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 8 4.6 "Premium" 24 16
+34480 "Lexus" "LS 460 L AWD" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 8 4.6 "Premium" 23 16
+34485 "Lexus" "LS 600h L" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 8 5 "Premium" 23 19
+33683 "Lincoln" "MKS AWD" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 6 3.5 "Regular" 25 17
+33684 "Lincoln" "MKS AWD" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 6 3.7 "Regular" 26 18
+33685 "Lincoln" "MKS FWD" 2014 "Large Cars" "Automatic" "Front-Wheel Drive" 6 3.7 "Regular" 28 19
+34092 "Lincoln" "MKZ AWD" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 4 2 "Regular" 31 22
+34094 "Lincoln" "MKZ AWD" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 6 3.7 "Regular" 26 18
+34093 "Lincoln" "MKZ FWD" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2 "Regular" 33 22
+34095 "Lincoln" "MKZ FWD" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 6 3.7 "Regular" 28 19
+34316 "Lincoln" "MKZ Hybrid FWD" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2 "Regular" 45 45
+34148 "Lotus" "Evora" 2014 "Minicompact Cars" "Manual" "Rear-Wheel Drive" 6 3.5 "Premium" 26 18
+34149 "Lotus" "Evora" 2014 "Minicompact Cars" "Manual" "Rear-Wheel Drive" 6 3.5 "Premium" 26 17
+34150 "Lotus" "Evora" 2014 "Minicompact Cars" "Automatic" "Rear-Wheel Drive" 6 3.5 "Premium" 28 19
+34151 "Lotus" "Evora" 2014 "Minicompact Cars" "Automatic" "Rear-Wheel Drive" 6 3.5 "Premium" 28 19
+34790 "MINI" "Cooper (3-doors)" 2014 "Subcompact Cars" "Automatic" "Front-Wheel Drive" 3 1.5 "Premium" 41 29
+34791 "MINI" "Cooper (3-doors)" 2014 "Subcompact Cars" "Manual" "Front-Wheel Drive" 3 1.5 "Premium" 42 30
+33995 "MINI" "Cooper Clubman" 2014 "Subcompact Cars" "Automatic" "Front-Wheel Drive" 4 1.6 "Premium" 35 27
+34042 "MINI" "Cooper Clubman" 2014 "Subcompact Cars" "Manual" "Front-Wheel Drive" 4 1.6 "Premium" 35 28
+33980 "MINI" "Cooper Clubvan" 2014 "Two Seaters" "Automatic" "Front-Wheel Drive" 4 1.6 "Premium" 35 27
+34147 "MINI" "Cooper Clubvan" 2014 "Two Seaters" "Manual" "Front-Wheel Drive" 4 1.6 "Premium" 35 28
+33992 "MINI" "Cooper Convertible" 2014 "Minicompact Cars" "Automatic" "Front-Wheel Drive" 4 1.6 "Premium" 35 27
+34033 "MINI" "Cooper Convertible" 2014 "Minicompact Cars" "Manual" "Front-Wheel Drive" 4 1.6 "Premium" 35 28
+34005 "MINI" "Cooper Countryman" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.6 "Premium" 30 25
+34067 "MINI" "Cooper Countryman" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 1.6 "Premium" 35 28
+33981 "MINI" "Cooper Coupe" 2014 "Two Seaters" "Automatic" "Front-Wheel Drive" 4 1.6 "Premium" 36 28
+33982 "MINI" "Cooper Coupe" 2014 "Two Seaters" "Manual" "Front-Wheel Drive" 4 1.6 "Premium" 37 29
+34006 "MINI" "Cooper Paceman" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.6 "Premium" 30 25
+34068 "MINI" "Cooper Paceman" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 1.6 "Premium" 35 28
+33983 "MINI" "Cooper Roadster" 2014 "Two Seaters" "Automatic" "Front-Wheel Drive" 4 1.6 "Premium" 35 27
+34028 "MINI" "Cooper Roadster" 2014 "Two Seaters" "Manual" "Front-Wheel Drive" 4 1.6 "Premium" 35 28
+34792 "MINI" "Cooper S (3-doors)" 2014 "Subcompact Cars" "Manual" "Front-Wheel Drive" 4 2 "Premium" 38 25
+34858 "MINI" "Cooper S (3-doors)" 2014 "Subcompact Cars" "Automatic" "Front-Wheel Drive" 4 2 "Premium" 38 27
+33996 "MINI" "Cooper S Clubman" 2014 "Subcompact Cars" "Manual" "Front-Wheel Drive" 4 1.6 "Premium" 35 26
+34043 "MINI" "Cooper S Clubman" 2014 "Subcompact Cars" "Automatic" "Front-Wheel Drive" 4 1.6 "Premium" 35 26
+33993 "MINI" "Cooper S Convertible" 2014 "Minicompact Cars" "Manual" "Front-Wheel Drive" 4 1.6 "Premium" 35 26
+34034 "MINI" "Cooper S Convertible" 2014 "Minicompact Cars" "Automatic" "Front-Wheel Drive" 4 1.6 "Premium" 35 26
+34007 "MINI" "Cooper S Countryman" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.6 "Premium" 32 25
+34008 "MINI" "Cooper S Countryman" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 1.6 "Premium" 32 26
+34009 "MINI" "Cooper S Countryman All4" 2014 "Compact Cars" "Automatic" "All-Wheel Drive" 4 1.6 "Premium" 30 23
+34010 "MINI" "Cooper S Countryman All4" 2014 "Compact Cars" "Manual" "All-Wheel Drive" 4 1.6 "Premium" 31 25
+33984 "MINI" "Cooper S Coupe" 2014 "Two Seaters" "Manual" "Front-Wheel Drive" 4 1.6 "Premium" 35 26
+34030 "MINI" "Cooper S Coupe" 2014 "Two Seaters" "Automatic" "Front-Wheel Drive" 4 1.6 "Premium" 35 26
+34011 "MINI" "Cooper S Paceman" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.6 "Premium" 32 25
+34012 "MINI" "Cooper S Paceman" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 1.6 "Premium" 32 26
+34013 "MINI" "Cooper S Paceman All4" 2014 "Compact Cars" "Automatic" "All-Wheel Drive" 4 1.6 "Premium" 30 23
+34014 "MINI" "Cooper S Paceman All4" 2014 "Compact Cars" "Manual" "All-Wheel Drive" 4 1.6 "Premium" 31 25
+33985 "MINI" "Cooper S Roadster" 2014 "Two Seaters" "Manual" "Front-Wheel Drive" 4 1.6 "Premium" 35 26
+34029 "MINI" "Cooper S Roadster" 2014 "Two Seaters" "Automatic" "Front-Wheel Drive" 4 1.6 "Premium" 35 26
+34015 "MINI" "JCW Countryman All4" 2014 "Compact Cars" "Automatic" "All-Wheel Drive" 4 1.6 "Premium" 30 23
+34016 "MINI" "JCW Countryman All4" 2014 "Compact Cars" "Manual" "All-Wheel Drive" 4 1.6 "Premium" 31 25
+34017 "MINI" "JCW Paceman All4" 2014 "Compact Cars" "Automatic" "All-Wheel Drive" 4 1.6 "Premium" 30 23
+34018 "MINI" "JCW Paceman All4" 2014 "Compact Cars" "Manual" "All-Wheel Drive" 4 1.6 "Premium" 31 25
+33997 "MINI" "John Cooper Works Clubman" 2014 "Subcompact Cars" "Manual" "Front-Wheel Drive" 4 1.6 "Premium" 35 26
+34044 "MINI" "John Cooper Works Clubman" 2014 "Subcompact Cars" "Automatic" "Front-Wheel Drive" 4 1.6 "Premium" 35 26
+33994 "MINI" "John Cooper Works Convertible" 2014 "Minicompact Cars" "Manual" "Front-Wheel Drive" 4 1.6 "Premium" 35 26
+34035 "MINI" "John Cooper Works Convertible" 2014 "Minicompact Cars" "Automatic" "Front-Wheel Drive" 4 1.6 "Premium" 35 26
+33986 "MINI" "John Cooper Works Coupe" 2014 "Two Seaters" "Manual" "Front-Wheel Drive" 4 1.6 "Premium" 35 26
+34031 "MINI" "John Cooper Works Coupe" 2014 "Two Seaters" "Automatic" "Front-Wheel Drive" 4 1.6 "Premium" 35 26
+33987 "MINI" "John Cooper Works Roadster" 2014 "Two Seaters" "Manual" "Front-Wheel Drive" 4 1.6 "Premium" 35 26
+34032 "MINI" "John Cooper Works Roadster" 2014 "Two Seaters" "Automatic" "Front-Wheel Drive" 4 1.6 "Premium" 35 26
+34437 "Maserati" "Ghibli V6" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 6 3 "Premium" 25 15
+34190 "Maserati" "Ghibli V6 AWD" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 6 3 "Premium" 25 15
+33913 "Maserati" "GranTurismo" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 8 4.7 "Premium" 21 13
+34154 "Maserati" "GranTurismo Convertible" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 8 4.7 "Premium" 20 13
+34100 "Maserati" "Quattroporte GTS" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 8 3.8 "Premium" 22 13
+34220 "Maserati" "Quattroporte SQ4 V6" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 6 3 "Premium" 24 15
+34162 "Mazda" "2" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 1.5 "Regular" 35 29
+34163 "Mazda" "2" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.5 "Regular" 34 28
+34245 "Mazda" "3 4-Door" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 2 "Regular" 41 30
+34246 "Mazda" "3 4-Door" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 2 "Regular" 41 29
+34274 "Mazda" "3 4-Door" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 2.5 "Regular" 39 28
+34275 "Mazda" "3 4-Door" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 2.5 "Regular" 39 28
+33941 "Mazda" "3 5-Door" 2014 "Midsize Cars" "Manual" "Front-Wheel Drive" 4 2 "Regular" 40 29
+33942 "Mazda" "3 5-Door" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2 "Regular" 40 30
+34287 "Mazda" "3 5-Door" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2.5 "Regular" 37 27
+34288 "Mazda" "3 5-Door" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2.5 "Regular" 38 28
+33399 "Mazda" "6" 2014 "Midsize Cars" "Manual" "Front-Wheel Drive" 4 2.5 "Regular" 37 25
+33400 "Mazda" "6" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2.5 "Regular" 38 26
+33906 "Mazda" "6" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2.5 "Regular" 40 28
+33908 "Mazda" "MX-5" 2014 "Two Seaters" "Manual" "Rear-Wheel Drive" 4 2 "Premium" 28 22
+33909 "Mazda" "MX-5" 2014 "Two Seaters" "Manual" "Rear-Wheel Drive" 4 2 "Premium" 28 21
+33910 "Mazda" "MX-5" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 4 2 "Premium" 28 21
+34919 "McLaren Automotive" "MP4-12C Coupe" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 8 3.8 "Premium" 22 15
+34920 "McLaren Automotive" "MP4-12C Spider" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 8 3.8 "Premium" 22 15
+34063 "Mercedes-Benz" "C250" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 4 1.8 "Premium" 31 22
+34037 "Mercedes-Benz" "C250 Coupe" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 4 1.8 "Premium" 31 22
+33649 "Mercedes-Benz" "C300 4matic" 2014 "Compact Cars" "Automatic" "4-Wheel Drive" 6 3.5 "Premium" 29 20
+33814 "Mercedes-Benz" "C300 4matic" 2014 "Compact Cars" "Automatic" "4-Wheel Drive" 6 3.5 "Premium or E85" 27 20
+34276 "Mercedes-Benz" "C300 4matic" 2014 "Compact Cars" "Automatic" "4-Wheel Drive" 6 3.5 "Premium" 27 20
+33648 "Mercedes-Benz" "C350" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 6 3.5 "Premium" 29 20
+33650 "Mercedes-Benz" "C350" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 6 3.5 "Premium or E85" 29 20
+33921 "Mercedes-Benz" "C350" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 6 3.5 "Premium" 29 20
+34039 "Mercedes-Benz" "C350 4matic Coupe" 2014 "Subcompact Cars" "Automatic" "4-Wheel Drive" 6 3.5 "Premium" 27 19
+34040 "Mercedes-Benz" "C350 Coupe" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 6 3.5 "Premium" 28 20
+34064 "Mercedes-Benz" "C63 AMG" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 8 6.2 "Premium" 19 13
+34038 "Mercedes-Benz" "C63 AMG Coupe" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 8 6.2 "Premium" 19 13
+33651 "Mercedes-Benz" "CL550 4matic" 2014 "Compact Cars" "Automatic" "4-Wheel Drive" 8 4.7 "Premium" 24 15
+34065 "Mercedes-Benz" "CL600" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 12 5.5 "Premium" 18 12
+33652 "Mercedes-Benz" "CL63 AMG" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 8 5.5 "Premium" 22 15
+34066 "Mercedes-Benz" "CL65 AMG" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 12 6 "Premium" 18 12
+34455 "Mercedes-Benz" "CLA250" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 2 "Premium" 38 26
+34786 "Mercedes-Benz" "CLA250 4matic" 2014 "Compact Cars" "Automatic" "4-Wheel Drive" 4 2 "Premium" 32 24
+34571 "Mercedes-Benz" "CLA45 AMG 4matic" 2014 "Compact Cars" "Automatic" "4-Wheel Drive" 4 2 "Premium" 31 23
+33568 "Mercedes-Benz" "CLS550" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 8 4.7 "Premium" 25 17
+33569 "Mercedes-Benz" "CLS550 4matic" 2014 "Compact Cars" "Automatic" "4-Wheel Drive" 8 4.7 "Premium" 24 17
+33653 "Mercedes-Benz" "CLS63 AMG" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 8 5.5 "Premium" 25 16
+33815 "Mercedes-Benz" "CLS63 AMG 4matic" 2014 "Compact Cars" "Automatic" "4-Wheel Drive" 8 5.5 "Premium" 22 16
+33654 "Mercedes-Benz" "CLS63 AMG S" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 8 5.5 "Premium" 25 16
+33816 "Mercedes-Benz" "CLS63 AMG S 4matic" 2014 "Compact Cars" "Automatic" "4-Wheel Drive" 8 5.5 "Premium" 22 16
+34396 "Mercedes-Benz" "E250 Bluetec" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 4 2.1 "Diesel" 42 28
+34397 "Mercedes-Benz" "E250 Bluetec 4matic" 2014 "Midsize Cars" "Automatic" "4-Wheel Drive" 4 2.1 "Diesel" 38 27
+33550 "Mercedes-Benz" "E350" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 6 3.5 "Premium" 30 20
+33551 "Mercedes-Benz" "E350" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 6 3.5 "Premium or E85" 29 20
+33580 "Mercedes-Benz" "E350" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 6 3.5 "Premium" 29 20
+33549 "Mercedes-Benz" "E350 4matic" 2014 "Midsize Cars" "Automatic" "4-Wheel Drive" 6 3.5 "Premium" 27 20
+33579 "Mercedes-Benz" "E350 4matic" 2014 "Midsize Cars" "Automatic" "4-Wheel Drive" 6 3.5 "Premium or E85" 28 20
+33668 "Mercedes-Benz" "E350 4matic" 2014 "Midsize Cars" "Automatic" "4-Wheel Drive" 6 3.5 "Premium" 28 20
+33686 "Mercedes-Benz" "E350 4matic (wagon)" 2014 "Station Wagons" "Automatic" "4-Wheel Drive" 6 3.5 "Premium" 27 20
+33788 "Mercedes-Benz" "E350 4matic Coupe" 2014 "Subcompact Cars" "Automatic" "4-Wheel Drive" 6 3.5 "Premium" 28 20
+33789 "Mercedes-Benz" "E350 4matic Coupe" 2014 "Subcompact Cars" "Automatic" "4-Wheel Drive" 6 3.5 "Premium or E85" 28 20
+33792 "Mercedes-Benz" "E350 4matic Coupe" 2014 "Subcompact Cars" "Automatic" "4-Wheel Drive" 6 3.5 "Premium" 28 20
+33915 "Mercedes-Benz" "E350 Convertible" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 6 3.5 "Premium or E85" 28 20
+33916 "Mercedes-Benz" "E350 Convertible" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 6 3.5 "Premium" 28 19
+33790 "Mercedes-Benz" "E350 Coupe" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 6 3.5 "Premium or E85" 29 20
+33791 "Mercedes-Benz" "E350 Coupe" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 6 3.5 "Premium" 28 20
+33914 "Mercedes-Benz" "E350 Coupe" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 6 3.5 "Premium" 30 20
+33848 "Mercedes-Benz" "E400 Hybrid" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 6 3.5 "Premium" 30 24
+33608 "Mercedes-Benz" "E550 4matic" 2014 "Midsize Cars" "Automatic" "4-Wheel Drive" 8 4.7 "Premium" 24 18
+33793 "Mercedes-Benz" "E550 Convertible" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 8 4.7 "Premium" 26 17
+34041 "Mercedes-Benz" "E550 Coupe" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 8 4.7 "Premium" 26 18
+33669 "Mercedes-Benz" "E63 AMG" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 8 5.5 "Premium" 24 16
+33943 "Mercedes-Benz" "E63 AMG 4matic" 2014 "Midsize Cars" "Automatic" "4-Wheel Drive" 8 5.5 "Premium" 23 16
+33861 "Mercedes-Benz" "E63 AMG 4matic (wagon)" 2014 "Station Wagons" "Automatic" "4-Wheel Drive" 8 5.5 "Premium" 21 15
+33670 "Mercedes-Benz" "E63 AMG S" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 8 5.5 "Premium" 24 16
+33944 "Mercedes-Benz" "E63 AMG S 4matic" 2014 "Midsize Cars" "Automatic" "4-Wheel Drive" 8 5.5 "Premium" 22 15
+33862 "Mercedes-Benz" "E63 AMG S 4matic (wagon)" 2014 "Station Wagons" "Automatic" "4-Wheel Drive" 8 5.5 "Premium" 21 15
+34439 "Mercedes-Benz" "S550" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 8 4.7 "Premium" 25 17
+34566 "Mercedes-Benz" "S550 4matic" 2014 "Large Cars" "Automatic" "4-Wheel Drive" 8 4.7 "Premium" 26 16
+34565 "Mercedes-Benz" "S63 AMG 4matic" 2014 "Large Cars" "Automatic" "4-Wheel Drive" 8 5.5 "Premium" 23 15
+33619 "Mercedes-Benz" "SL550" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 8 4.7 "Premium" 25 18
+33620 "Mercedes-Benz" "SL63 AMG" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 8 5.5 "Premium" 25 16
+34260 "Mercedes-Benz" "SL65 AMG" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 12 6 "Premium" 21 14
+34021 "Mercedes-Benz" "SLK250" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 4 1.8 "Premium" 33 23
+34022 "Mercedes-Benz" "SLK250" 2014 "Two Seaters" "Manual" "Rear-Wheel Drive" 4 1.8 "Premium" 32 22
+34023 "Mercedes-Benz" "SLK350" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 6 3.5 "Premium" 29 21
+33621 "Mercedes-Benz" "SLK55 AMG" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 8 5.5 "Premium" 28 19
+34261 "Mercedes-Benz" "SLS AMG Black Series Coupe" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 8 6.2 "Premium" 17 13
+34024 "Mercedes-Benz" "SLS AMG Coupe" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 8 6.2 "Premium" 19 13
+34026 "Mercedes-Benz" "SLS AMG GT Coupe" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 8 6.2 "Premium" 19 13
+34027 "Mercedes-Benz" "SLS AMG GT Roadster" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 8 6.2 "Premium" 19 13
+34025 "Mercedes-Benz" "SLS AMG Roadster" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 8 6.2 "Premium" 19 13
+33570 "Mitsubishi" "Lancer" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 2 "Regular" 34 25
+33571 "Mitsubishi" "Lancer" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 2 "Regular" 34 26
+33572 "Mitsubishi" "Lancer" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 2.4 "Regular" 31 22
+33573 "Mitsubishi" "Lancer" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 2.4 "Regular" 30 23
+33574 "Mitsubishi" "Lancer" 2014 "Compact Cars" "Automatic" "All-Wheel Drive" 4 2 "Premium" 25 18
+33575 "Mitsubishi" "Lancer AWD" 2014 "Compact Cars" "Automatic" "All-Wheel Drive" 4 2.4 "Regular" 29 22
+33576 "Mitsubishi" "Lancer Evolution" 2014 "Compact Cars" "Manual" "All-Wheel Drive" 4 2 "Premium" 23 17
+33577 "Mitsubishi" "Lancer Evolution" 2014 "Compact Cars" "Automatic" "All-Wheel Drive" 4 2 "Premium" 22 17
+33586 "Mitsubishi" "Lancer Sportback" 2014 "Station Wagons" "Automatic" "Front-Wheel Drive" 4 2 "Regular" 32 24
+33587 "Mitsubishi" "Lancer Sportback" 2014 "Station Wagons" "Automatic" "Front-Wheel Drive" 4 2.4 "Regular" 29 22
+34339 "Mitsubishi" "Mirage" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 3 1.2 "Regular" 42 34
+34340 "Mitsubishi" "Mirage" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 3 1.2 "Regular" 44 37
+34901 "Mitsubishi" "i-MiEV" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" NA NA "Electricity" 99 126
+33988 "Nissan" "370Z" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 6 3.7 "Premium" 26 19
+33989 "Nissan" "370Z" 2014 "Two Seaters" "Manual" "Rear-Wheel Drive" 6 3.7 "Premium" 26 18
+33990 "Nissan" "370Z Roadster" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 6 3.7 "Premium" 25 18
+33991 "Nissan" "370Z Roadster" 2014 "Two Seaters" "Manual" "Rear-Wheel Drive" 6 3.7 "Premium" 25 17
+34247 "Nissan" "Altima" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2.5 "Regular" 38 27
+34248 "Nissan" "Altima" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 6 3.5 "Regular" 31 22
+34572 "Nissan" "Cube" 2014 "Station Wagons" "Automatic" "Front-Wheel Drive" 4 1.8 "Regular" 31 27
+34573 "Nissan" "Cube" 2014 "Station Wagons" "Manual" "Front-Wheel Drive" 4 1.8 "Regular" 30 25
+33432 "Nissan" "GT-R" 2014 "Subcompact Cars" "Automatic" "All-Wheel Drive" 6 3.8 "Premium" 23 16
+34495 "Nissan" "Juke" 2014 "Station Wagons" "Automatic" "Front-Wheel Drive" 4 1.6 "Premium" 32 27
+34496 "Nissan" "Juke" 2014 "Station Wagons" "Manual" "Front-Wheel Drive" 4 1.6 "Premium" 31 25
+34497 "Nissan" "Juke AWD" 2014 "Station Wagons" "Automatic" "All-Wheel Drive" 4 1.6 "Premium" 30 25
+34699 "Nissan" "Leaf" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" NA NA "Electricity" 101 126
+34349 "Nissan" "Maxima" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 6 3.5 "Premium" 26 19
+34612 "Nissan" "Sentra" 2014 "Midsize Cars" "Manual" "Front-Wheel Drive" 4 1.8 "Regular" 36 27
+34613 "Nissan" "Sentra" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 1.8 "Regular" 39 30
+34615 "Nissan" "Sentra" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 1.8 "Regular" 39 30
+34614 "Nissan" "Sentra FE" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 1.8 "Regular" 40 30
+33581 "Nissan" "Versa" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.6 "Regular" 40 31
+33582 "Nissan" "Versa" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 1.6 "Regular" 36 27
+33583 "Nissan" "Versa" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.6 "Regular" 35 26
+33622 "Porsche" "911 Carrera" 2014 "Minicompact Cars" "Manual" "Rear-Wheel Drive" 6 3.4 "Premium" 27 19
+33623 "Porsche" "911 Carrera" 2014 "Minicompact Cars" "Automatic" "Rear-Wheel Drive" 6 3.4 "Premium" 28 20
+33630 "Porsche" "911 Carrera 4" 2014 "Minicompact Cars" "Manual" "4-Wheel Drive" 6 3.4 "Premium" 27 19
+33631 "Porsche" "911 Carrera 4" 2014 "Minicompact Cars" "Automatic" "4-Wheel Drive" 6 3.4 "Premium" 28 20
+33632 "Porsche" "911 Carrera 4 Cabriolet" 2014 "Minicompact Cars" "Manual" "4-Wheel Drive" 6 3.4 "Premium" 26 19
+33633 "Porsche" "911 Carrera 4 Cabriolet" 2014 "Minicompact Cars" "Automatic" "4-Wheel Drive" 6 3.4 "Premium" 27 20
+33634 "Porsche" "911 Carrera 4S" 2014 "Minicompact Cars" "Manual" "4-Wheel Drive" 6 3.8 "Premium" 26 18
+33635 "Porsche" "911 Carrera 4S" 2014 "Minicompact Cars" "Automatic" "4-Wheel Drive" 6 3.8 "Premium" 26 19
+33636 "Porsche" "911 Carrera 4S Cabriolet" 2014 "Minicompact Cars" "Manual" "4-Wheel Drive" 6 3.8 "Premium" 26 18
+34036 "Porsche" "911 Carrera 4S Cabriolet" 2014 "Minicompact Cars" "Automatic" "4-Wheel Drive" 6 3.8 "Premium" 26 19
+33624 "Porsche" "911 Carrera Cabriolet" 2014 "Minicompact Cars" "Manual" "Rear-Wheel Drive" 6 3.4 "Premium" 27 19
+33625 "Porsche" "911 Carrera Cabriolet" 2014 "Minicompact Cars" "Automatic" "Rear-Wheel Drive" 6 3.4 "Premium" 28 20
+33626 "Porsche" "911 Carrera S" 2014 "Minicompact Cars" "Manual" "Rear-Wheel Drive" 6 3.8 "Premium" 27 19
+33627 "Porsche" "911 Carrera S" 2014 "Minicompact Cars" "Automatic" "Rear-Wheel Drive" 6 3.8 "Premium" 27 19
+33628 "Porsche" "911 Carrera S Cabriolet" 2014 "Minicompact Cars" "Manual" "Rear-Wheel Drive" 6 3.8 "Premium" 27 19
+33629 "Porsche" "911 Carrera S Cabriolet" 2014 "Minicompact Cars" "Automatic" "Rear-Wheel Drive" 6 3.8 "Premium" 27 19
+34548 "Porsche" "911 GT3" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 6 3.8 "Premium" 20 15
+34466 "Porsche" "911 Targa 4" 2014 "Minicompact Cars" "Manual" "4-Wheel Drive" 6 3.4 "Premium" 26 18
+34467 "Porsche" "911 Targa 4" 2014 "Minicompact Cars" "Automatic" "4-Wheel Drive" 6 3.4 "Premium" 26 19
+34551 "Porsche" "911 Targa 4S" 2014 "Minicompact Cars" "Manual" "4-Wheel Drive" 6 3.8 "Premium" 26 18
+34552 "Porsche" "911 Targa 4S" 2014 "Minicompact Cars" "Automatic" "4-Wheel Drive" 6 3.8 "Premium" 25 18
+34462 "Porsche" "911 Turbo" 2014 "Minicompact Cars" "Automatic" "4-Wheel Drive" 6 3.8 "Premium" 24 17
+34463 "Porsche" "911 Turbo Cabriolet" 2014 "Minicompact Cars" "Automatic" "4-Wheel Drive" 6 3.8 "Premium" 24 17
+34464 "Porsche" "911 Turbo S" 2014 "Minicompact Cars" "Automatic" "4-Wheel Drive" 6 3.8 "Premium" 24 17
+34465 "Porsche" "911 Turbo S Cabriolet" 2014 "Minicompact Cars" "Automatic" "4-Wheel Drive" 6 3.8 "Premium" 24 17
+33536 "Porsche" "Boxster" 2014 "Two Seaters" "Manual" "Rear-Wheel Drive" 6 2.7 "Premium" 30 20
+33537 "Porsche" "Boxster" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 6 2.7 "Premium" 32 22
+33560 "Porsche" "Boxster S" 2014 "Two Seaters" "Manual" "Rear-Wheel Drive" 6 3.4 "Premium" 28 20
+33561 "Porsche" "Boxster S" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 6 3.4 "Premium" 30 21
+33538 "Porsche" "Cayman" 2014 "Two Seaters" "Manual" "Rear-Wheel Drive" 6 2.7 "Premium" 30 20
+33539 "Porsche" "Cayman" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 6 2.7 "Premium" 32 22
+33562 "Porsche" "Cayman S" 2014 "Two Seaters" "Manual" "Rear-Wheel Drive" 6 3.4 "Premium" 28 20
+33563 "Porsche" "Cayman S" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 6 3.4 "Premium" 30 21
+34354 "Porsche" "Panamera" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 6 3.6 "Premium" 28 18
+34355 "Porsche" "Panamera 4" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 6 3.6 "Premium" 27 18
+34441 "Porsche" "Panamera 4S" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 6 3 "Premium" 27 17
+34356 "Porsche" "Panamera 4S Executive" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 6 3 "Premium" 26 17
+34357 "Porsche" "Panamera GTS" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 8 4.8 "Premium" 24 16
+34440 "Porsche" "Panamera S" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 6 3 "Premium" 27 17
+34789 "Porsche" "Panamera S E-Hybrid" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 6 3 "Premium and Electricity" 29 23
+34358 "Porsche" "Panamera Turbo" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 8 4.8 "Premium" 24 15
+34359 "Porsche" "Panamera Turbo Executive" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 8 4.8 "Premium" 24 15
+34621 "Porsche" "Panamera Turbo S" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 8 4.8 "Premium" 24 15
+34622 "Porsche" "Panamera Turbo S Executive" 2014 "Large Cars" "Automatic" "All-Wheel Drive" 8 4.8 "Premium" 24 15
+34223 "Rolls-Royce" "Ghost" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 12 6.6 "Premium" 21 13
+34224 "Rolls-Royce" "Ghost EWB" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 12 6.6 "Premium" 21 13
+34221 "Rolls-Royce" "Phantom" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 12 6.7 "Premium" 19 11
+34277 "Rolls-Royce" "Phantom Coupe" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 12 6.7 "Premium" 19 11
+34164 "Rolls-Royce" "Phantom Drophead Coupe" 2014 "Compact Cars" "Automatic" "Rear-Wheel Drive" 12 6.7 "Premium" 19 11
+34222 "Rolls-Royce" "Phantom EWB" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" 12 6.7 "Premium" 19 11
+34191 "Rolls-Royce" "Wraith" 2014 "Midsize Cars" "Automatic" "Rear-Wheel Drive" 12 6.6 "Premium" 21 13
+33451 "Roush Performance" "Stage 3 Mustang" 2014 "Subcompact Cars" "Manual" "Rear-Wheel Drive" 8 5 "Premium" 22 14
+33477 "Roush Performance" "Stage 3 Mustang" 2014 "Subcompact Cars" "Automatic" "Rear-Wheel Drive" 8 5 "Premium" 22 15
+34131 "SRT" "Viper" 2014 "Two Seaters" "Manual" "Rear-Wheel Drive" 10 8.4 "Premium" 19 12
+34262 "Scion" "FR-S" 2014 "Minicompact Cars" "Manual" "Rear-Wheel Drive" 4 2 "Premium" 30 22
+34263 "Scion" "FR-S" 2014 "Minicompact Cars" "Automatic" "Rear-Wheel Drive" 4 2 "Premium" 34 25
+33637 "Scion" "iQ" 2014 "Minicompact Cars" "Automatic" "Front-Wheel Drive" 4 1.3 "Regular" 37 36
+33655 "Scion" "tC" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 2.5 "Regular" 31 23
+33656 "Scion" "tC" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 2.5 "Regular" 31 23
+34623 "Scion" "xB" 2014 "Station Wagons" "Automatic" "Front-Wheel Drive" 4 2.4 "Regular" 28 22
+34624 "Scion" "xB" 2014 "Station Wagons" "Manual" "Front-Wheel Drive" 4 2.4 "Regular" 28 22
+34308 "Scion" "xD" 2014 "Subcompact Cars" "Automatic" "Front-Wheel Drive" 4 1.8 "Regular" 33 27
+34309 "Scion" "xD" 2014 "Subcompact Cars" "Manual" "Front-Wheel Drive" 4 1.8 "Regular" 33 27
+34152 "Subaru" "BRZ" 2014 "Minicompact Cars" "Manual" "Rear-Wheel Drive" 4 2 "Premium" 30 22
+34153 "Subaru" "BRZ" 2014 "Minicompact Cars" "Automatic" "Rear-Wheel Drive" 4 2 "Premium" 34 25
+33922 "Subaru" "Impreza AWD" 2014 "Compact Cars" "Manual" "All-Wheel Drive" 4 2.5 "Premium" 25 19
+33923 "Subaru" "Impreza AWD" 2014 "Compact Cars" "Manual" "All-Wheel Drive" 4 2.5 "Premium" 23 17
+34165 "Subaru" "Impreza AWD" 2014 "Compact Cars" "Manual" "All-Wheel Drive" 4 2 "Regular" 34 25
+34166 "Subaru" "Impreza AWD" 2014 "Compact Cars" "Automatic" "All-Wheel Drive" 4 2 "Regular" 36 27
+33954 "Subaru" "Impreza Wagon AWD" 2014 "Station Wagons" "Manual" "All-Wheel Drive" 4 2.5 "Premium" 25 19
+33955 "Subaru" "Impreza Wagon AWD" 2014 "Station Wagons" "Manual" "All-Wheel Drive" 4 2.5 "Premium" 23 17
+34225 "Subaru" "Impreza Wagon AWD" 2014 "Station Wagons" "Manual" "All-Wheel Drive" 4 2 "Regular" 33 25
+34226 "Subaru" "Impreza Wagon AWD" 2014 "Station Wagons" "Automatic" "All-Wheel Drive" 4 2 "Regular" 36 27
+33609 "Subaru" "Legacy AWD" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 4 2.5 "Regular" 32 24
+33671 "Subaru" "Legacy AWD" 2014 "Midsize Cars" "Manual" "All-Wheel Drive" 4 2.5 "Regular" 29 21
+33672 "Subaru" "Legacy AWD" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 6 3.6 "Regular" 25 18
+34776 "Tesla" "Model S (60 kW-hr battery pack)" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" NA NA "Electricity" 97 94
+34775 "Tesla" "Model S (85 kW-hr battery pack)" 2014 "Large Cars" "Automatic" "Rear-Wheel Drive" NA NA "Electricity" 90 88
+34487 "Toyota" "Avalon" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 6 3.5 "Regular" 31 21
+34488 "Toyota" "Avalon" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 6 3.5 "Regular" 31 21
+34486 "Toyota" "Avalon Hybrid" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2.5 "Regular" 39 40
+34289 "Toyota" "Camry" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2.5 "Regular" 35 25
+34292 "Toyota" "Camry" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 6 3.5 "Regular" 31 21
+34290 "Toyota" "Camry Hybrid LE" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2.5 "Regular" 39 43
+34291 "Toyota" "Camry Hybrid XLE/SE" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2.5 "Regular" 38 40
+34398 "Toyota" "Corolla" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 1.8 "Regular" 36 27
+34399 "Toyota" "Corolla" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 1.8 "Regular" 38 29
+34400 "Toyota" "Corolla" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 1.8 "Regular" 37 29
+34401 "Toyota" "Corolla" 2014 "Midsize Cars" "Manual" "Front-Wheel Drive" 4 1.8 "Regular" 37 28
+34402 "Toyota" "Corolla LE Eco" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 1.8 "Regular" 42 30
+34403 "Toyota" "Corolla LE Eco" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 1.8 "Regular" 40 30
+34489 "Toyota" "Prius" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 1.8 "Regular" 48 51
+34516 "Toyota" "Prius Plug-in Hybrid" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 1.8 "Regular Gas and Electricity" 49 51
+34639 "Toyota" "Prius c" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.5 "Regular" 46 53
+34317 "Toyota" "Prius v" 2014 "Station Wagons" "Automatic" "Front-Wheel Drive" 4 1.8 "Regular" 40 44
+33924 "Toyota" "Yaris" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 1.5 "Regular" 37 30
+33925 "Toyota" "Yaris" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.5 "Regular" 36 30
+33821 "Volkswagen" "Beetle" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 2 "Diesel" 39 29
+33822 "Volkswagen" "Beetle" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 2 "Diesel" 41 28
+33926 "Volkswagen" "Beetle" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 2 "Premium" 30 24
+34070 "Volkswagen" "Beetle" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 5 2.5 "Regular" 29 22
+34071 "Volkswagen" "Beetle" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 5 2.5 "Regular" 31 22
+34432 "Volkswagen" "Beetle" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 2 "Premium" 31 23
+34640 "Volkswagen" "Beetle" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.8 "Regular" 33 25
+34641 "Volkswagen" "Beetle" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 1.8 "Regular" 33 24
+33794 "Volkswagen" "Beetle Convertible" 2014 "Subcompact Cars" "Automatic" "Front-Wheel Drive" 4 2 "Diesel" 37 28
+33795 "Volkswagen" "Beetle Convertible" 2014 "Subcompact Cars" "Manual" "Front-Wheel Drive" 4 2 "Diesel" 41 28
+33917 "Volkswagen" "Beetle Convertible" 2014 "Subcompact Cars" "Automatic" "Front-Wheel Drive" 4 2 "Premium" 29 23
+34045 "Volkswagen" "Beetle Convertible" 2014 "Subcompact Cars" "Automatic" "Front-Wheel Drive" 5 2.5 "Regular" 27 21
+34430 "Volkswagen" "Beetle Convertible" 2014 "Subcompact Cars" "Manual" "Front-Wheel Drive" 4 2 "Premium" 31 23
+34638 "Volkswagen" "Beetle Convertible" 2014 "Subcompact Cars" "Automatic" "Front-Wheel Drive" 4 1.8 "Regular" 32 24
+33823 "Volkswagen" "CC" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 2 "Premium" 31 22
+33824 "Volkswagen" "CC" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 2 "Premium" 32 21
+33657 "Volkswagen" "CC 4motion" 2014 "Compact Cars" "Automatic" "All-Wheel Drive" 6 3.6 "Premium" 25 17
+33918 "Volkswagen" "Eos" 2014 "Subcompact Cars" "Automatic" "Front-Wheel Drive" 4 2 "Premium" 30 22
+34168 "Volkswagen" "GTI" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 2 "Premium" 32 24
+34169 "Volkswagen" "GTI" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 2 "Premium" 31 21
+33818 "Volkswagen" "Golf" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 2 "Diesel" 42 30
+33820 "Volkswagen" "Golf" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 2 "Diesel" 42 30
+34069 "Volkswagen" "Golf" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 5 2.5 "Regular" 30 23
+33817 "Volkswagen" "Jetta" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 2 "Diesel" 42 30
+33819 "Volkswagen" "Jetta" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 2 "Diesel" 42 30
+33927 "Volkswagen" "Jetta" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 1.8 "Regular" 36 26
+33928 "Volkswagen" "Jetta" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.8 "Regular" 36 25
+33929 "Volkswagen" "Jetta" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 2 "Premium" 32 24
+33930 "Volkswagen" "Jetta" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 2 "Premium" 33 23
+33931 "Volkswagen" "Jetta" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 2 "Regular" 29 23
+33932 "Volkswagen" "Jetta" 2014 "Compact Cars" "Manual" "Front-Wheel Drive" 4 2 "Regular" 34 24
+34167 "Volkswagen" "Jetta Hybrid" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 4 1.4 "Premium" 48 42
+33860 "Volkswagen" "Jetta SportWagen" 2014 "Station Wagons" "Manual" "Front-Wheel Drive" 4 2 "Diesel" 42 30
+33956 "Volkswagen" "Jetta SportWagen" 2014 "Station Wagons" "Automatic" "Front-Wheel Drive" 4 2 "Diesel" 39 29
+34104 "Volkswagen" "Jetta SportWagen" 2014 "Station Wagons" "Automatic" "Front-Wheel Drive" 5 2.5 "Regular" 30 23
+34105 "Volkswagen" "Jetta SportWagen" 2014 "Station Wagons" "Manual" "Front-Wheel Drive" 5 2.5 "Regular" 33 23
+33673 "Volkswagen" "Passat" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 6 3.6 "Premium" 28 20
+33945 "Volkswagen" "Passat" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 2 "Diesel" 40 30
+33946 "Volkswagen" "Passat" 2014 "Midsize Cars" "Manual" "Front-Wheel Drive" 4 2 "Diesel" 43 31
+33947 "Volkswagen" "Passat" 2014 "Midsize Cars" "Manual" "Front-Wheel Drive" 4 1.8 "Regular" 35 24
+33948 "Volkswagen" "Passat" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 4 1.8 "Regular" 34 24
+33949 "Volkswagen" "Passat" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 5 2.5 "Regular" 31 22
+33950 "Volkswagen" "Passat" 2014 "Midsize Cars" "Manual" "Front-Wheel Drive" 5 2.5 "Regular" 32 22
+33658 "Volvo" "S60 AWD" 2014 "Compact Cars" "Automatic" "All-Wheel Drive" 6 3 "Regular" 25 18
+33660 "Volvo" "S60 AWD" 2014 "Compact Cars" "Automatic" "All-Wheel Drive" 5 2.5 "Regular" 29 20
+33659 "Volvo" "S60 FWD" 2014 "Compact Cars" "Automatic" "Front-Wheel Drive" 5 2.5 "Regular" 30 21
+33675 "Volvo" "S80 AWD" 2014 "Midsize Cars" "Automatic" "All-Wheel Drive" 6 3 "Regular" 25 18
+33674 "Volvo" "S80 FWD" 2014 "Midsize Cars" "Automatic" "Front-Wheel Drive" 6 3.2 "Regular" 29 20
+34461 "smart" "fortwo cabriolet" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 3 1 "Premium" 38 34
+34460 "smart" "fortwo coupe" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" 3 1 "Premium" 38 34
+34393 "smart" "fortwo electric drive convertible" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" NA NA "Electricity" 93 122
+34394 "smart" "fortwo electric drive coupe" 2014 "Two Seaters" "Automatic" "Rear-Wheel Drive" NA NA "Electricity" 93 122

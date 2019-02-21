@@ -1,0 +1,117 @@
+---
+title: "Project 1 - Part 2"
+author: "Ian Sims"
+date: "February 6, 2019"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r echo=FALSE, error=TRUE, message=FALSE, warning=FALSE}
+library(ggplot2)
+library(lattice)
+library(gapminder)
+library(GGally)
+library(NHANES)
+library(broom)
+library(BSDA)
+library(coin)
+library(reshape2)
+library(gtools)
+library(dplyr)
+library(data.table)
+library(ggpmisc)
+```
+
+## Section 1 - GDP and life expectancy in 2007
+
+The graphs below compare GDP per capita to life expectency by continent. The blue line represents a linear model and the orange line represents a LOESS model. LOESS is a nonparametric method, meaning it does not rely on a distributional assumption. This would be in contrast to the linear model that assume linearity of the underlying distribution.
+
+There does appear to be skewness in this data. As such applying a log transformation to this data may allow us to more clearly see the relationships.
+
+```{r echo=FALSE, error=TRUE, message=FALSE, warning=FALSE, fig.width=12, fig.height=6}
+gapminder07 = subset(gapminder, year == 2007)
+ggplot(gapminder07, aes(x = gdpPercap, y = lifeExp)) + geom_point() + geom_smooth(method = "lm", 
+    se = FALSE) + geom_smooth(method = "loess", se = FALSE, colour="orange") + ggtitle("2007 Gapminder - Blue: Linear Regression - Orange: LOESS") + facet_wrap(~continent, ncol = 3)
+```
+
+The graphs below shows the same data with a log transformation applied. The relationship appear more clear in this view. Several items can be seen in these graphs:
+
+1. Life expectancy and GDP per capita various across the continents. This is particulary true for Africa which is considerable lower on both counts.
+2. The Loess models seem to be more reponsive to outliers. This can be seen the most clearly in Asia.
+3. The linear models across all the continents seem to approximate the LOESS model reasonably well.
+4. The linear models across the continents have very similar slopes.
+
+Using the linear models there does appear to be a relationship between life expectency and GDP per capita. Furthermore this relationship appear to be very similar across continents, even where the values of these variables differ.
+
+```{r echo=FALSE, error=TRUE, message=FALSE, warning=FALSE, fig.width=12, fig.height=6}
+gapminder07 = subset(gapminder, year == 2007)
+ggplot(gapminder07, aes(x = gdpPercap, y = lifeExp)) + geom_point() + geom_smooth(method = "lm", 
+    se = FALSE) + geom_smooth(method = "loess", se = FALSE, colour="orange") + ggtitle("2007 Gapminder - Log Transformation - Blue: Linear Regression - Orange: LOESS") + scale_x_log10() + facet_wrap(~continent, ncol = 3)
+```
+
+## Section 2 - Life expectancy over time by continent
+
+The graphs below show the changes in life expectancy over time by continent. Life expectency has increased consistently over time for even when considering the individual nations within the continents, with few exceptions. The steapest increases seem to be in the Americas and Asia. These two continents have similar slopes on the linear model. The increases are flatter, though still increasing for Africa and Europe. 
+
+This also shows that the distribution by country within the continents are very different. Europe, for example, has a very tight distriubution with its one outlier "catching up" in recent decades. Asian and African nations, on the other hand, are much more varied in life expectancies. It does appear that Asian countries are becoming more closely destributed over time, even as African nations become more disbursed.
+
+Because of these differences within the continents it may be useful to view the changes in avaerage life expectancy by continent over time.
+
+```{r echo=FALSE, error=TRUE, message=FALSE, warning=FALSE, fig.width=12, fig.height=6}
+gapminderAll = gapminder
+ggplot(gapminderAll, aes(x = year, y = lifeExp)) + geom_point() + geom_smooth(method = "lm", 
+    se = FALSE) + ggtitle("Gapminder - Blue: Linear Regression") + facet_wrap(~continent, ncol = 3)
+```
+
+The graph below shows the changes in average life expectency by continent over time. Again we see the steepest increases in the Americas and Asia, with flatter increases in Europe and Africa. On thing to note is that the average life expectancy in Africa actuall seems to have some leveling off in recent decades. It also appear as if Asia has some what "caught up" to the Americas over this time period.
+
+```{r echo=FALSE, error=TRUE, message=FALSE, warning=FALSE, fig.width=12, fig.height=6}
+gapminderAll = gapminder
+gapminderAll = aggregate(gapminderAll[, 4], list(gapminderAll$continent, gapminderAll$year), mean)
+names(gapminderAll) = c("continent", "year", "AvgLifeExp")
+ggplot(gapminderAll, aes(x = year, y = AvgLifeExp)) + geom_point() + geom_smooth(method = "lm", 
+    se = FALSE) + ggtitle("Gapminder - Blue: Linear Regression") + facet_wrap(~continent, ncol = 3)
+```
+
+## Section 3 - Changes in the relationship between GDP and life expectancy over time
+
+The graphs below show the relationship between GDP per capita and life expectancy by continent over time. Going down the columns shows the changes in this relationsip for a continent over time. Going across shows the differences in these relationships across continents for the same time period.
+
+In general, it does appear that this relationship has changed over time for each continent. Generally the relationship is steeper in the decades just following WW2 and flatter for more recent decades. An exception to this would be Africa where the relationship appears to be fairly consistent over time with some period of an increased relationship in the 1970s and 1980s.
+
+Europe perhaps shows the most dramatic changes over time. The early post-war years show a steep relationship. This reationsip gradually flattens over time even in to recent decades, with the most recent decade showing a flatter relationship than the other continents.
+
+The Americas and Asia show distinct difference in these relationships that begin to converge starting around the 1970s. In the early decades the Americas show a much steeper relationship and by the more recent decades they appear to be very similar.
+
+It is difficult to say whether changes in life expectency can be entirely explained from changes in GDP per capita. The consistency of the relationship for more recent decades coupled with the lack of consistency of life expectancy over time by continent, do lead us to suspect that the changes in life expectancy are more related to GDP than a time component. 
+
+In addition, the flattening of the relationship for Europe (the continent with the highest GDP per capita) could support the idea that this relationship may become weaker at higher levels of GDP.
+
+```{r echo=FALSE, error=TRUE, message=FALSE, warning=FALSE, fig.width=12, fig.height=15}
+gapminderAll = subset(gapminder, year < 1978)
+ggplot(gapminderAll, aes(x = gdpPercap, y = lifeExp)) + geom_point() + geom_smooth(method = "lm", 
+    se = FALSE) + ggtitle("Gapminder - Log Transformation - Blue: linear regression") + scale_x_log10() + facet_wrap(~year+continent, ncol = 5)
+```
+
+```{r echo=FALSE, error=TRUE, message=FALSE, warning=FALSE, fig.width=12, fig.height=15}
+gapminderAll = subset(gapminder, year > 1978)
+ggplot(gapminderAll, aes(x = gdpPercap, y = lifeExp)) + geom_point() + geom_smooth(method = "lm", 
+    se = FALSE) + ggtitle("Gapminder - Log Transformation - Blue: linear regression") + scale_x_log10() + facet_wrap(~year+continent, ncol = 5)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+

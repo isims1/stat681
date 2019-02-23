@@ -83,6 +83,78 @@ caff.groups = factor(caff.groups)
 
 wilcox_test(ranks ~ caff.groups, dist = "exact")
 
+install.packages('ggplot2')
+install.packages('lattice')
+install.packages('gapminder')
+install.packages('GGally')
+install.packages('NHANES')
+install.packages('broom')
+install.packages('BSDA')
+install.packages('coin')
+install.packages('reshape2')
+install.packages('gtools')
+install.packages('dplyr')
+install.packages('data.table')
+install.packages('alr4')
+
+set.seed(681)
+x1 = rnorm(10000)
+x2 = 3 * x1 + rnorm(10000)
+y = -8 * x1 + 6 * x2 + rnorm(10000)
+
+sim.data = data.frame(y, x1, x2)
+model1 = lm(y ~ x1, data = sim.data)
+
+summary(model1)
+
+WT91 = 50
+WT21 = 25
+WT181 = 34.26 - .97 * WT21 + 1.2 * WT91
+
+
+WT92 = 51
+WT22 = 25
+WT182 = 34.26 - .97 * WT22 + 1.2 * WT92
+
+WT182 - WT181
+
+WT18 = 34.26 - .97 * WT2 + 1.2 * WT9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

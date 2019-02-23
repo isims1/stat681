@@ -52,14 +52,24 @@ This would be true based on this model, assuming that both the girls had the sam
 **(a) Fit a linear regression model to predict log(acrePrice) from year alone, taking year as a continuous variable. Write down the regression equation you obtain.**
 
 ```{r}
-
+m.price = lm(log(acrePrice) ~ year, data = MinnLand)
+tidy(m.price)
 ```
+
+The regresion equation is: log(acrePrice) = -193.88 + 0.10*year
 
 **(b) Fit a regression model to predict log(acrePrice) from year alone, taking year as a factor. State the coefficient for the year 2008, and explain what this coefficient means.**
 
 ```{r}
+mnlnd = MinnLand
+mnlnd$year.fctr = as.factor(MinnLand$year)
+#head(model.matrix(acrePrice ~ year.fctr, mnlnd), 10)
+m.price = lm(log(acrePrice) ~ year.fctr, data = mnlnd)
+summary(m.price)
 
 ```
+
+
 
 **(c) Each of these two models can be used to (retrospectively) predict the expected log of sale price per acre from 2002 to 2011. Plot these predictions for the two models, and describe the differences.**
 

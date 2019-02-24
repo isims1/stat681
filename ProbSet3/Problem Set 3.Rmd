@@ -26,6 +26,9 @@ library(gtools)
 library(dplyr)
 library(data.table)
 library(alr4)
+library(knitr)
+library(carData)
+library(moderndive)
 ```
 
 ## 1. (5 points.) Using the data set BGSgirls in package alr4:
@@ -64,24 +67,37 @@ The regresion equation is: log(acrePrice) = -193.88 + 0.10*year
 mnlnd = MinnLand
 mnlnd$year.fctr = as.factor(MinnLand$year)
 #head(model.matrix(acrePrice ~ year.fctr, mnlnd), 10)
-m.price = lm(log(acrePrice) ~ year.fctr, data = mnlnd)
-summary(m.price)
-
+m.price.fctr = lm(log(acrePrice) ~ year.fctr, data = mnlnd)
+summary(m.price.fctr)
 ```
 
-
+The coefficient for the log(acrePrice) for 2008 is 0.68. This means that the estimated average log(acrePrice) for 2008 is 7.27 + .68 or 7.95. Which means the estimated average acrePrice for 2008 is: $2835.58.
 
 **(c) Each of these two models can be used to (retrospectively) predict the expected log of sale price per acre from 2002 to 2011. Plot these predictions for the two models, and describe the differences.**
 
 ```{r}
-
+plot(Effect("year", m.price))
+plot(Effect("year.fctr", m.price.fctr))
 ```
+
+The linear model that uses year as a continuos variable predicts a perfectly linear increase over time. The linear model based on year as a factor shows more variation over time. For example the latest four years of data show considerable flattening.
 
 **(d) Which of these two models fits the data better? Support your answer using graphs or otherwise.**
 
 ```{r}
-
+mnlnd$logAcrePrice = log(mnlnd$acrePrice)
+mnlnd_grp = mnlnd %>%
+              group_by(year) %>%
+              dplyr::summarize(Mean_Log_acrePrice = mean(logAcrePrice, na.rm=TRUE))
+plot(Mean_Log_acrePrice ~ year, data = mnlnd_grp)
+title(main = "Actual Sample Data")
+plot(Effect("year", m.price))
+plot(Effect("year.fctr", m.price.fctr))
 ```
+
+The first graph plots the average log(acrePrice) by year from the sample data. The second graph show the linear model with year as a continuous variable. The third plot shows the linear model with year as a factor. The factored model definitely seems to more closely resemble the actual sample experience.
+
+Also given each year is very likely not independent, considering the linear model with year as continuos variable is problematic.
 
 ## 3. (10 points.) The data set Moore in the package carData contains data from an experiment to see how conformity with someone else's opinion was related to the other person's status. Subjects were paired with a partner of either high or low status; the partners were secretly collaborators of the investigators. On 40 key questions, the partners were told to disagree with the subjects. The experimenters counted the number of times each subject "conformed" by changing their opinion to agree with their partner. Each subject was also (presumably before the experiment) given a questionnaire to measure their authoritarianism, as authoritarianism could potentially affect how the subject reacted to disagreement.
 
@@ -96,34 +112,48 @@ summary(m.price)
 **(a) Show that there's evidence that partner.status affects conformity. (This might not require any regression. . . )**
 
 ```{r}
-
+plot(conformity ~ partner.status, data = Moore)
 ```
+
+Just looking at a simple plot of partner.status to conformity shows there are distinct differences both in the average conformity and the spread of the individual partner.status values over conformity. It looks like there is evidence to suspect that partner.status affects conformity.
 
 **(b) Does the effect of partner.status differ for people with different fscores? One way to look at this is to fit a linear model with conformity as the response and fscore, partner.status, and their interaction as regressors. Fit this model, give the P-value, and explain what the P-value means and what it tells you about whether the effect of partner.status differs for people with different fscores.**
 
 ```{r}
-
+m.conformity = lm(conformity ~ partner.status + fscore + partner.status:fscore, data = Moore)
+get_regression_table(m.conformity)
 ```
 
+The P-Value for the interaction coefficient for fscore and partner.status is 0.01. In essence, the P-Values tell you the effect of adding additional terms to the model. This is a low P-Value which suggest that adding this interaction term does seem significant. This suggests that the effect of partner.status does differ for people with different fscores.
 
 **(c) A broader question is how the effect of partner.status differs for people with different fscore. This is perhaps easiest to study graphically. Using your model in (b), make predictions for conformity for people with fscores ranging from 15 to 68, for both the high status and low status treatments. Plot these predictions on the same graph, clearly distinguishing between the lines for the high and low status groups (e.g. by color.) Assuming your model is close to right, what does this graph tell you about how the effect of partner.status differs for people with different fscores?**
 
 ```{r}
-
+m.conformity.df = augment(m.conformity)
+m.conformity.df.filt = m.conformity.df[which(m.conformity.df$fscore >= 15 & m.conformity.df$fscore <= 68), ]
+ggplot(m.conformity.df.filt, aes(x = fscore, y = .fitted, color = partner.status)) + geom_line()
 ```
+
+There is a clear difference in how the effect of partner.status differs for people with different fscores. We see that when partner.status is high the predicted conformity decreases as the fscore increases. When partner.status is low the predicted conformity actually increased with higher fscores. 
 
 ## 4. (10 points.) The data set cakes contains data from a baking experiment using packaged cake mix. The response, Y, is a "palatability score" (higher is tastier.) The explanatory variables are X1, baking time in minutes, and X2, baking temperature in degrees Fahrenheit. (Ignore the block variable.)
 
 **(a) Show graphically that it is not appropriate to model expected palatability score as a linear function of X1 and X2. Explain why we should have known this even before we looked at the data.**
 
 ```{r}
-
+ggplot(cakes, aes(X2, X1)) +
+    geom_jitter(position = position_jitter(width = .1))
 ```
+
+When plotting the data points with X1 and X2 on the axis, we can see a clear pattern. These two variables have seem to have a correlation and therefore it is not appropriate to model expected palatability as a linear function of both variables.
+
+It is fairly intuitive to assume there is a relationship between cooking time and oven tempature.
 
 **(b) Fit a model to predict palatability score as the sum of quadratic functions of baking time and baking temperature. (For simplicity, we recommend you do not fit any interaction.) Display the fitted model graphically, e.g. through colored or faceted plots.**
 
 ```{r}
-
+cakes
+m.palatability = lm(Y ~ X1^2 + X2^2, data = cakes)
 ```
 
 **(c) For how long and at what temperature should you bake a cake using this mix to maximize the predicted palatability? (Hint: Recall from Calc I that a quadratic ax2 + bx + c is maximized at ???b/(2a) if a is negative.)**

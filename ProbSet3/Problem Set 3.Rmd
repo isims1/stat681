@@ -152,69 +152,167 @@ It is fairly intuitive to assume there is a relationship between cooking time an
 **(b) Fit a model to predict palatability score as the sum of quadratic functions of baking time and baking temperature. (For simplicity, we recommend you do not fit any interaction.) Display the fitted model graphically, e.g. through colored or faceted plots.**
 
 ```{r}
-cakes
-m.palatability = lm(Y ~ X1^2 + X2^2, data = cakes)
+m.palatability = lm(Y ~ X1 + X2 + I(X1^2) + I(X2^2), data = cakes)
+m.palatability.df = augment(m.palatability)
+ggplot(m.palatability.df, aes(x = X2, y = .fitted)) + geom_line() + facet_wrap(~ X1, labeller = label_both) + ylab("Palatability") + xlab("Baking Temp (F)") + ggtitle("Expected Palatability by Baking Time and Baking Temp")
 ```
 
 **(c) For how long and at what temperature should you bake a cake using this mix to maximize the predicted palatability? (Hint: Recall from Calc I that a quadratic ax2 + bx + c is maximized at ???b/(2a) if a is negative.)**
 
 ```{r}
-
+m.palatability = lm(Y ~ X1 + X2 + I(X1^2) + I(X2^2), data = cakes)
+rslts = tidy(m.palatability)
+rslts
+max_X1 = ( - rslts[2, 2]) / (2 * rslts[4, 2])
+max_X1
+max_X2 = ( - rslts[3, 2]) / (2 * rslts[5, 2])
+max_X2
 ```
+
+The baking time and tempature for the predicted maximum palatablility are 36.2 minutes and 354 degrees F, repsectively.
 
 ## 5. (10 points.) Returning to the MinnLand data set, one subject the data was collected to answer was the relationship between sale price per acre and crpPct, the percentage of the land enrolled in the Conservation Reserve Program. However, there are many potential confounding variables associated with crpPct that could affect sale prices. For example, land in the Conservation Reserve Program is disproportionately in northwest Minnesota, and sale prices in northwest Minnesota tend to be lower than in the rest of the state for reasons that may have less to do with the program than with negative temperatures in the winter. One way to study this would be to fit models that include both crpPct and region as predictors. However, it is not clear a priori whether an interaction between crpPct and region will help.
 
 **(a) Fit a linear regression model to predict log(acrePrice) from crpPct and region, with no interaction. State the coefficient of crpPct in this model, and explain what this coefficient tells you about the relationship between crpPct and log(acrePrice).**
 
 ```{r}
-
+m.acrePrice = lm(log(acrePrice) ~ crpPct + region, data = MinnLand)
+summary(m.acrePrice)
 ```
+
+Based on this model the coefficient for crpPct is near zero, which suggest that there isn't a relationship between crpPct and acrePrice.
 
 **(b) Fit a regression model to predict log(acrePrice) from crpPct and region with an interaction. Explain what this model tells you about the relationship between crpPct and log(acrePrice).**
 
 ```{r}
-
+m.acrePrice.intct = lm(log(acrePrice) ~ crpPct + region + crpPct:region, data = MinnLand)
+summary(m.acrePrice.intct)
 ```
+
+Including the interaction term again shows that all of the coefficients for interactions by region are close to zero. This, again suggests that there isn't a relationship between crpPct and acrePrice.
 
 **(c) Perform an ANOVA to compare your models from parts (a) and (b). State the P-value that you get, and explain what, if anything, this P-value tells you.**
 
 ```{r}
-
+anova(m.acrePrice, m.acrePrice.intct)
 ```
+
+The P-Value is 0.002, which is very low. This suggest that there is evidence that the addition of the interaction term does positively contribute to the model.
 
 **(d) Your ANOVA in part (c) made certain assumptions. Check the residuals of your model from (b) to see if these assumptions are close to satisfied.**
 
 ```{r}
-
+m.acrePrice.intct = lm(log(acrePrice) ~ crpPct + region + crpPct:region, data = MinnLand)
+m.acrePrice.intct.df = augment(m.acrePrice.intct)
+ggplot(m.acrePrice.intct.df, aes(x = .fitted, y = .resid)) + geom_point()
 ```
+
+ANOVA assumes heteroskedacticity of the residuals. Plotting the fitted values against the residual there are definite differences particularly at higher fitted values. This is an indication that the assumption does not hold.
 
 ## 6. (10 points.) The data set BigMac2003 in alr4 gives the price of a Big Mac in 2003 (BigMac), measured in minutes of labor required to buy one, in 69 cities. Of the many potential explanatory variables in the data set, FoodIndex, a measure of food prices (relative to a baseline where Zurich is 100), both logically makes sense as a predictor and has a fairly strong correlation with BigMac. We thus wish to first try a model to predict BigMac from FoodIndex, but these variables may require transformation.
 
 **(a) Choose interpretable transformations to apply to FoodIndex and BigMac, such that the relationship between the transformed variables is approximately linear. (Note that you may choose "no transformation" for either variable.) Justify your choice using graphs or otherwise.**
 
 ```{r}
+ggplot(BigMac2003, aes(x = FoodIndex, y = BigMac)) + geom_point()
+ggplot(BigMac2003, aes(x = FoodIndex, y = log(BigMac))) + geom_point()
+ggplot(BigMac2003, aes(x = log(FoodIndex), y = log(BigMac))) + geom_point()
+
+m.bigmac = lm(log(BigMac) ~ log(FoodIndex), data = BigMac2003)
+m.bigmac.df = augment(m.bigmac)
+ggplot(m.bigmac.df, aes(x = .fitted, y = .resid)) + geom_point() + geom_smooth(method = "gam", formula = y ~ s(x))
 
 ```
+
+The first graphs plots the actual values of FoodIndex to BigMac. This shows a defintie right-skewdness. This suggest a ptoential log transformation. A log transformation is also am easily interpretable transformation. Apply a log transformation to the BigMac response variable (graph 2) helps to remove some of the skewness. However there does still seem to be a nonlinear trend in this data. The third graph includes a log transformation of both BigMac and Food index. This definitely seems like a more linear trend.
+
+The final graph is a plot of the residuals based on a linear model applied to the log transformation of both variables. The residula plot confirms that these transformations do produce a nice linerarity.
 
 **(b) The model can straightforwardly be improved by adding another predictor. Fit a better model that predicts the transformed BigMac variable from FoodIndex and one other variable. Convince the grader that your model is an improvement. (Your model may include complex regressors such as interactions if you wish.)**
 
-```{r}
+After exploring the data associated with BigMac2003, it was determined that a reasonable addition to this model would be the TeachNI ("Primary teacher's net income, 1000s of US dollars"). This seems reasonble as the BigMac price is likely a function of overall food prices and the cost of labor.
 
+```{r}
+ggplot(BigMac2003, aes(x = TeachNI, y = log(BigMac))) + geom_point()
+ggplot(BigMac2003, aes(x = log(TeachNI), y = log(BigMac))) + geom_point()
+
+m.bigmac = lm(log(BigMac) ~ log(FoodIndex), data = BigMac2003)
+m.bigmac.plus = lm(log(BigMac) ~ log(FoodIndex) + log(TeachNI), data = BigMac2003)
+anova(m.bigmac, m.bigmac.plus)
+
+m.bigmac.plus.df  = augment(m.bigmac.plus)
+ggplot(m.bigmac.plus.df, aes(x = .fitted, y = .resid)) + geom_point()
+
+m.bigmac.plus2 = lm(log(BigMac) ~ log(FoodIndex) + log(TeachNI) + log(FoodIndex):log(TeachNI), data = BigMac2003)
+anova(m.bigmac.plus, m.bigmac.plus2)
 ```
+
+The first graph considers the relationship between TeachNI and the log of BigMac. Again we see some left-skewdness. Applying an additional log transfomation to TeachNI (second graph), produces a more linear relationship.
+
+Fitting a model that includes the log transformations for FoodIndex and TeachNI and performing an anova test prduces a P-Value very near zero which does suggest the additional variable improves the model. Plotting the residuals for the added filed model (graph 3) also demonstrates that the ANOVA assumption of heteroskedacticity is fairly reasonable.
+
+Finally, adding an interaction term for FoodIndex and TeachNI and running an ANOVA against the model with the non-interaction prodices a P-Value of .73, which suggests that addding the interaction term does not improve the model.
 
 **(c) Using numbers, graphs, and words, explain what your improved model tells you about how the price of Big Macs relates to the Food Index and your other explanatory variable.**
 
 ```{r}
+m.bigmac.plus = lm(log(BigMac) ~ log(FoodIndex) + log(TeachNI), data = BigMac2003)
+summary(m.bigmac.plus)
 
+ggplot(BigMac2003, aes(x = log(FoodIndex), y = log(BigMac))) + geom_point()
+ggplot(BigMac2003, aes(x = log(TeachNI), y = log(BigMac))) + geom_point()
 ```
+
+Looking at the coefficients produced by this enhanced model, the relationship between both FoodIndex and TechNI is negatively correlated with BigMac price. This makes sense when looking at the scatterplots of the actual amaple data. We see that as FoodIndex and TeachNI increase the BigMac price decreases.
 
 ## 7. (5 points.) The data set BGSall in alr4 gives measurements on all subjects of the Berkeley Guidance Study, both male and female. Our goal is to find the model that best predicts height at age 18 (HT18 gives this height in cm) using measurements available at age 9: Sex, WT2, HT2, WT9, HT9, LG9, and ST9. See ?BGSall for definitions of all these variables. Find the best predictive model you can. You may not transform HT18 but you may transform any of the predictors. You may also consider interactions and higher-order terms. AIC isn't the be-all and end-all, but I managed to get a model with an AIC of 708.1 without looking too hard, so your model's AIC should get close to that. In addition, you should give some measure of how large you would expect the prediction errors if your model was applied to individuals similar to those in the data set (children born in California in 1928-29.)
 
 ```{r}
+var1 = c("HT18", "Sex", "WT2", "HT2", "WT9", "HT9", "LG9", "ST9")
+summary(BGSall[,var1])
+scatterplotMatrix(BGSall[,var1],smooth = F, regLine = F, diagonal = F)
+
+dd1 = powerTransform(cbind(WT2, HT2, WT9, HT9, LG9, ST9) ~ 1, BGSall)
+summary(dd1)
+
+m.ht18 = lm(HT18 ~ WT9 + HT9, data = BGSall)
+m.ht18.intct = lm(HT18 ~ WT9 + HT9 + WT9:HT9, data = BGSall)
+m.ht18.plus = lm(HT18 ~ WT9 + HT9 + LG9 + ST9, data = BGSall)
+m.ht18.plus2 = lm(HT18 ~ WT9 + HT9 + LG9 + ST9 + WT9:LG9, data = BGSall)
+
+anova(m.ht18, m.ht18.intct)
+anova(m.ht18, m.ht18.plus)
+anova(m.ht18.plus, m.ht18.plus2)
+
+summary(m.ht18.plus)
+
+AIC(m.ht18.plus2)
 
 ```
 
+The scatterplots of each of these variables shows a fair amount of linearity with transformation. This is confimred by performing the power transformation test which suggests that the only term that could benefit from transfromation is the HT2. However, due to the probable correlation between the age 2 variables and the age 9 variables, we chose to exclude the age 2 variables from the model. It also makes mroe intuitive sense that age 9 variables will be more powerful when predicting a factor related to age 18.
 
+Starting with a simple model that includes only WT9 and HT9 we compare this to more complex models using ANOVA. Adding an interaction term between WT9 and HT9 produced an ANOVA P-Value of 0.93, suggesting the addition of the interaction term did not improve the model.
+
+Next we compared the simple model to a model that includes all variables except the age 2 variables. Comparing these models using ANOVA produced a P-VALU close to zero, suggesting these additional variables do improve the model.
+
+Finally, we added an interaction term between WT9 and LG9 (maybe an intuitive relationship) and compared this using ANOVA to previous model which produce a P-Value of 0.53. This suggests this interaction term didn't improve the model.
+
+The best model we produces seemed to be a simple linear model using the valriables: WT9, HT9, LG9 and ST9. with no transformations, as follows:
+
+```{r}
+m.ht18.plus = lm(HT18 ~ WT9 + HT9 + LG9 + ST9, data = BGSall)
+
+summary(m.ht18.plus)
+```
+
+Looking at the predicted residuals we see:
+
+```{r}
+m.ht18.plus.df = augment(m.ht18.plus)
+ggplot(m.ht18.plus.df, aes(x = .fitted, y = .resid)) + geom_point() + geom_smooth(method = "gam", formula = y ~ s(x))
+
+```
 
 
 

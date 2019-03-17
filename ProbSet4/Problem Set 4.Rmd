@@ -1,0 +1,252 @@
+---
+title: "Problem Set 4"
+author: "Ian Sims"
+date: "March 9, 2019"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, tidy = TRUE)
+set.seed(470670)
+```
+
+Load packages:
+
+```{r echo=FALSE, error=TRUE, message=FALSE, warning=FALSE}
+library(ggplot2)
+library(lattice)
+library(gapminder)
+library(GGally)
+library(NHANES)
+library(broom)
+library(BSDA)
+library(coin)
+library(reshape2)
+library(gtools)
+library(dplyr)
+library(data.table)
+library(alr4)
+library(knitr)
+library(carData)
+library(moderndive)
+library(survival)
+library(survminer)
+library(lme4)
+library(raster)
+```
+
+## 1. Recall that a Poisson distribution with parameter ?? has probability mass function f(x) = ??xe????? x!
+
+**Does the number of children a woman has follow a Poisson distribution? We collect data from 1761 adult German women, and count their children:**
+
+**Number of children 0 1 2 3 4 5 6 7 8 9 10**
+**Women with this number of children 398 455 575 227 65 28 9 3 0 1 0**
+
+**Perform a goodness-of-fit test to see whether this data can be well-modeled using a Poisson distribution, stating the value of your test statistic, your P-value, and your conclusion.**
+
+```{r}
+#Using the Chi-Square test statistic
+
+dd = data.frame("children" = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10), "n" = c(398, 455, 575, 227, 65, 28, 9, 3, 0, 1, 0))
+
+N = sum(dd$n)
+
+observed = dd$n
+lambda.obs = sum((dd$children * dd$n))/N
+
+expected = N * dpois(dd$children, lambda.obs)
+
+extra = N - sum(expected)
+
+chi.stat = sum((observed - expected)^2/expected) + extra
+
+poisson.chisq.sim = function(N, lambda.obs){
+  sim.sample = data.frame(x = rpois(N, lambda.obs))
+  lambda.sim = mean(sim.sample$x)
+  x.tally = tally(group_by(sim.sample, x))
+  observed = x.tally$n
+  expected = N * dpois(x.tally$x, lambda.sim)
+  extra = N - sum(expected)
+  chi.stat = sum((observed - expected)^2/expected) + extra
+  return(chi.stat)
+}
+
+chi.list = replicate(10000, poisson.chisq.sim(N, lambda.obs))
+p.value = mean(chi.list >= chi.stat)
+
+```
+
+Using the Chi-Square test statistic and simulation the P-Value is approximatley equal to 0.01. This is a fairly small p-value and would lead us to conclude that this data is not consistent with a Poisson model.
+
+**2. The data set illinois-rainstorms.txt gives the rainfall (in inches) in a sample of 227 rainstorms in Illinois.On the same graph, plot:**
+
+**(a) A 95% pointwise confidence band for the CDF of rainfall;**
+
+**(b) A 95% simultaneous confidence band for the CDF of rainfall. and clearly indicate on the graph which band is which.**
+
+```{r, message=FALSE}
+dd = scan("illinois-rainstorms.txt")
+F.hat = ecdf(dd)
+
+x.grid = seq(min(dd), max(dd), 0.01)
+point.lower = rep(NA, length(x.grid))
+point.upper = rep(NA, length(x.grid))
+n = length(dd)
+
+for(J in 1:length(x.grid)){
+  CI = binom.test(sum(dd <= x.grid[J]), n)$conf.int
+  point.lower[J] = CI[1]
+  point.upper[J] = CI[2]
+}
+
+alpha = 0.05
+epsilon = sqrt(log(2 / alpha) / (2 * n))
+
+L = function(y) {
+  raw = F.hat(y) - epsilon
+  return(ifelse(raw < 0, 0, raw))
+}
+
+U = function(y) {
+  raw = F.hat(y) + epsilon
+  return(ifelse(raw > 1, 1, raw))
+}
+
+simul.lower = L(x.grid)
+simul.upper = U(x.grid)
+
+y = F.hat(x.grid)
+plot.df = data.frame(x = x.grid, y)
+
+gg = ggplot(plot.df, aes(x, y)) + geom_step() + geom_step(y = simul.lower, col = "orange") + geom_step(y = simul.upper, col = "orange") + geom_step(y = point.lower, col = "blue") + geom_step(y = point.upper, col = "blue")
+
+gg + ggtitle("Illinois Rainstorms") + labs(subtitle = "Blues gives 95% pointwise band, orange gives 95% simultaneous band") + xlab("Rainfall (inches)") + ylab("Empirical CDF")
+
+```
+
+```{r}
+
+
+```
+
+**3. Here are survival times (in days) for a sample of HIV patients (a "+" indicates the patient was still alive at the last time of observation):**
+
+**22, 90, 256, 320+, 428, 670+, 910, 997, 1070, 1081, 1197, 1355+, 1560, 1933, 2202**
+
+**Use R to obtain the Kaplan-Meier estimate of the survival function, and plot it along with pointwise confidence limits calculated using a method of your choice.**
+
+```{r}
+time = c(22, 90, 256, 320, 428, 670, 910, 997, 1070, 1081, 1197, 1355, 1560, 1933, 2202)
+event = c(1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1)
+
+surv.data = Surv(time = time, event = event)
+
+surv.log = survfit(surv.data ~ 1, conf.type = "log")
+
+ggsurvplot(surv.log, data = surv.data) + ggtitle("Log-based pointwise band")
+
+```
+
+**4. For the Illinois rainstorms data:**
+
+**(a) Find the sample mean ¯x, and use the bootstrap to estimate the mean squared error of x¯ as an estimate of the population mean.**
+
+```{r}
+dd = scan("illinois-rainstorms.txt")
+
+x.bar = mean(dd)
+x.bar
+
+mean.boot = replicate(10000, mean(sample(dd, replace = TRUE)))
+
+mean((mean.boot - x.bar)^2)
+```
+
+**(b) Find the sample standard deviation s, and use the bootstrap to estimate the mean squared error of s as an estimate of the population standard deviation.**
+
+```{r}
+dd = scan("illinois-rainstorms.txt")
+
+s = sd(dd)
+s
+
+s.boot = replicate(10000, sd(sample(dd, replace = TRUE)))
+
+mean((s.boot - s)^2)  
+```
+
+**(c) Find the sample coefficient of variation s/¯x, and use the bootstrap to estimate the mean squared error of s/¯x as an estimate of the population coefficient of variation.**
+
+```{r}
+dd = scan("illinois-rainstorms.txt")
+
+dd.cv = cv(dd) / 100
+dd.cv
+
+dd.cv.boot = replicate(10000, cv(sample(dd, replace = TRUE)) / 100)
+
+mean((dd.cv.boot - dd.cv)^2)
+```
+
+## 5. The file rabbits.txt contains the eosinophil counts of a bunch of rabbits.
+
+**(a) Find a 95% bootstrap Studentized t-pivot confidence interval for the mean eosinophil count of rabbits, without using the boot package.**
+
+**(b) Find a 95% bootstrap BCA confidence interval for the mean eosinophil count of rabbits, using whatever packages you wish.**
+
+## 6. The file geyser.txt contains two variables: waiting, which gives the waiting times (in minutes) between eruptions of Old Faithful, and duration, which gives the duration (in minutes) of the eruption following that waiting time.
+
+**(a) Plot the data and add a regression line to predict duration from waiting time. Does it look like the key assumptions required for classical regression inference (linearity and homoskedasticity) are met?**
+
+**(b) Even if classical assumptions are not met, we can still use the bootstrap to do inference. Find a 95% bootstrap confidence interval for the slope parameter of the linear regression, and carefully explain what this interval means.**
+
+## 7. (Computationally expensive; set aside lots of computing time.) Suppose we wish to find a 95% confidence interval for the mean from an IID sample of size 20 from a chi-square distribution with 1 degree of freedom. (You can generate such a sample using rchisq().) Perform simulations to estimate the level of coverage of
+
+**(a) The percentile bootstrap**
+
+**(b) The residual (basic) bootstrap**
+
+**(c) The BCa bootstrap** 
+
+**(d) The Studentized (t-pivot) bootstrap**
+
+**Note: The number of bootstrap replications has little effect on relative accuracy, so keep B to a moderate value like 1000.**
+
+## 8. For the Illinois rainstorms data:
+
+**(a) Find the maximum likelihood estimates of the shape and rate parameters of a gamma distribution fitted to the data.**
+
+**(b) Plot (on the same graph): . The empirical CDF of the data; . The CDF of the gamma distribution you estimated.**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

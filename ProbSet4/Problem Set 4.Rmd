@@ -15,6 +15,7 @@ Load packages:
 ```{r echo=FALSE, error=TRUE, message=FALSE, warning=FALSE}
 library(ggplot2)
 library(lattice)
+library(latticeExtra)
 library(gapminder)
 library(GGally)
 library(NHANES)
@@ -33,6 +34,9 @@ library(survival)
 library(survminer)
 library(lme4)
 library(raster)
+library(boot)
+library(MASS)
+library(np)
 ```
 
 ## 1. Recall that a Poisson distribution with parameter ?? has probability mass function f(x) = ??xe????? x!
@@ -162,6 +166,8 @@ mean.boot = replicate(10000, mean(sample(dd, replace = TRUE)))
 mean((mean.boot - x.bar)^2)
 ```
 
+The sample mean is approximatley .224 and the boostrap estimate of the mean squared error is approximatley .001.
+
 **(b) Find the sample standard deviation s, and use the bootstrap to estimate the mean squared error of s as an estimate of the population standard deviation.**
 
 ```{r}
@@ -174,6 +180,8 @@ s.boot = replicate(10000, sd(sample(dd, replace = TRUE)))
 
 mean((s.boot - s)^2)  
 ```
+
+The sample sd is approximatley .366 and the boostrap estimate of the mean squared error is approximatley .002.
 
 **(c) Find the sample coefficient of variation s/¯x, and use the bootstrap to estimate the mean squared error of s/¯x as an estimate of the population coefficient of variation.**
 
@@ -188,27 +196,131 @@ dd.cv.boot = replicate(10000, cv(sample(dd, replace = TRUE)) / 100)
 mean((dd.cv.boot - dd.cv)^2)
 ```
 
+The sample cv is approximatley 1.630 and the boostrap estimate of the mean squared error is approximatley .010.
+
 ## 5. The file rabbits.txt contains the eosinophil counts of a bunch of rabbits.
 
 **(a) Find a 95% bootstrap Studentized t-pivot confidence interval for the mean eosinophil count of rabbits, without using the boot package.**
 
+```{r}
+dd = c(55,140,91,122,111,185,203,101,76,145,95,101,196,45,299,226,65,70,196,72,121,171,151,113,112,67,276,125,100,81,122,71,158,78,162,128,96,79,67,119)
+
+n = length(dd)
+x.bar = mean(dd)
+
+t.pivot = function(x){
+  x.boot = sample(x, replace = TRUE)
+  t.boot = (mean(x.boot) - mean(x)) /
+           (sd(x.boot) / sqrt(length(x)))
+  return(t.boot)
+}
+
+t.boot = replicate(10000, t.pivot(dd))
+
+quantile(t.boot, c(0.025, 0.975))
+qt(c(.025, .975), df = n-1)
+
+ci = mean(dd) - quantile(t.boot, c(0.975, 0.025)) * sd(dd)/sqrt(n)
+
+x.bar
+ci
+```
+
+The 95% bootstrap Studentized t-pivot ci for the mean eosinophil is approximatley (107.96, 148.17).
+
 **(b) Find a 95% bootstrap BCA confidence interval for the mean eosinophil count of rabbits, using whatever packages you wish.**
+
+```{r}
+dd = c(55,140,91,122,111,185,203,101,76,145,95,101,196,45,299,226,65,70,196,72,121,171,151,113,112,67,276,125,100,81,122,71,158,78,162,128,96,79,67,119)
+
+bootmean = function(x, indices){
+  return(mean(x[indices]))
+}
+
+bootmean.dist = boot(dd, bootmean, R = 10000)
+boot.ci(bootmean.dist)
+```
+
+The 95% bootstrap BCa ci for the mean eosinophil is approximatley (109.2, 145.9).
 
 ## 6. The file geyser.txt contains two variables: waiting, which gives the waiting times (in minutes) between eruptions of Old Faithful, and duration, which gives the duration (in minutes) of the eruption following that waiting time.
 
 **(a) Plot the data and add a regression line to predict duration from waiting time. Does it look like the key assumptions required for classical regression inference (linearity and homoskedasticity) are met?**
 
+```{r}
+dd = read.csv("geyser.txt", sep = " ", header = TRUE)
+
+ggplot(dd, aes(x = waiting, y = duration)) + geom_point() + geom_smooth(method = "lm")
+
+eruption.model = lm(duration ~ waiting, data = dd)
+get_regression_table(eruption.model)
+
+eruption.model.df = augment(eruption.model)
+ggplot(eruption.model.df, aes(x = waiting, y = abs(.resid))) + geom_point() + geom_smooth(se = FALSE)
+
+```
+
+Based on the residual plot there is significant heteroskedascity in the residuals.
+
 **(b) Even if classical assumptions are not met, we can still use the bootstrap to do inference. Find a 95% bootstrap confidence interval for the slope parameter of the linear regression, and carefully explain what this interval means.**
+
+```{r}
+dd = read.csv("geyser.txt", sep = " ", header = TRUE)
+
+lm.pairs.boot = function(data, indices){
+	newdata = data[indices,]
+	return(lm(newdata[,2] ~ newdata[,1])$coef[2])
+}
+
+boot.lm.dist = boot(cbind(dd$waiting, dd$duration), lm.pairs.boot, R = 10000)
+
+boot.ci(boot.lm.dist)
+```
+
+The BCa boostrap estimate of the 95% ci for the slope of the regression line is approxamately (-0.0589, -0.0475). This means that if the assumptions of this method are met and you created a band based on this interval about 95% of the time it would encompass the true value of the regression function.
 
 ## 7. (Computationally expensive; set aside lots of computing time.) Suppose we wish to find a 95% confidence interval for the mean from an IID sample of size 20 from a chi-square distribution with 1 degree of freedom. (You can generate such a sample using rchisq().) Perform simulations to estimate the level of coverage of
 
 **(a) The percentile bootstrap**
 
+Sorry I could not figure out how to translate the simulation for the coverage for the Studentized to these other bootstrapping methods.
+
 **(b) The residual (basic) bootstrap**
+
+Sorry I could not figure out how to translate the simulation for the coverage for the Studentized to these other bootstrapping methods.
 
 **(c) The BCa bootstrap** 
 
+Sorry I could not figure out how to translate the simulation for the coverage for the Studentized to these other bootstrapping methods.
+
 **(d) The Studentized (t-pivot) bootstrap**
+
+```{r}
+n = 20 
+chi.sim = function(n, B) { 
+  x = rchisq(n, 1) 
+  m = mean(x) 
+  s = sd(x) 
+  s2 = var(x) 
+  chi.cis = function(x, B) { 
+    chi.boot = function(x, m, s) { 
+      x.boot = sample(x, replace = T) 
+      t = (mean(x.boot) - m)/(sd(x.boot)/sqrt(n)) 
+      chi2 = (n - 1) * var(x.boot)/s2 
+      return(c(t, chi2))
+    }
+    boot.dist = replicate(B, chi.boot(x, m, s)) 
+    m.ci = m - quantile(boot.dist[1, ], c(0.975, 0.025)) * s/sqrt(n) 
+    v.ci = (n - 1) * s2/quantile(boot.dist[2, ], c(0.975, 0.025)) 
+    return(c(m.ci, v.ci))
+    }
+    return(chi.cis(x, B)) 
+  }
+chi.rep = replicate(1000, chi.sim(n, B = 1000)) 
+1 - mean(chi.rep[1, ] > 1) - mean(chi.rep[2, ] < 1)
+```
+
+The coverage of this simulation is 0.935.
 
 **Note: The number of bootstrap replications has little effect on relative accuracy, so keep B to a moderate value like 1000.**
 
@@ -216,37 +328,108 @@ mean((dd.cv.boot - dd.cv)^2)
 
 **(a) Find the maximum likelihood estimates of the shape and rate parameters of a gamma distribution fitted to the data.**
 
+```{r}
+dd = scan("illinois-rainstorms.txt")
+
+fit = fitdistr(dd, "gamma")
+fit
+```
+
 **(b) Plot (on the same graph): . The empirical CDF of the data; . The CDF of the gamma distribution you estimated.**
 
+```{r}
+dd = scan("illinois-rainstorms.txt")
 
+fit = fitdistr(dd, "gamma")
 
+dd_gamma = rgamma(length(dd), fit$estimate[1], fit$estimate[2])
 
+vals <- data.frame(actual=dd, gamma=dd_gamma)
 
+ecdfplot(~ actual + gamma, data=vals, auto.key=list(space='right'))
+```
 
+## 9. For the geyser.txt data:
 
+**(a) Choose a bandwidth for a Gaussian kernel to estimate the PDF of waiting time, stating how how you (or R) calculated the bandwidth. Plot a Gaussian kernel density estimate of the PDF of waiting time using this bandwidth.**
 
+```{r}
+dd = read.csv("geyser.txt", sep = " ", header = TRUE)
 
+wait = dd$waiting
 
+f.hat = density(wait, bw = "nrd")
 
+plot(f.hat)
+```
 
+I used the standard R function for plotting this. This function uses the standard formula for the bandwidth for the Gaussian kernal of 1.06 * sd * n ^ (-.2). 
 
+**(b) Your friend is allergic to normal distributions, and asks you to instead create a kernel density estimate using a uniform kernel with bandwidth 4 (meaning the kernel stretches two minutes up and down from each observation.) Plot such an estimate. Hint: Make sure the area under the curve is 1.**
 
+```{r}
+dd = read.csv("geyser.txt", sep = " ", header = TRUE)
 
+wait = dd$waiting
 
+f.hat = density(wait, bw = 4, kernel = "rectangular")
 
+plot(f.hat)
 
+```
 
+I'm not sure this is what you were looking for, but I couldn't find anything in the notes to help with this.
 
+## 10. For the geyser.txt data:
 
+**(a) Plot a conditional density estimate of eruption duration given the previous waiting time. Describe what your plot tells you.**
 
+```{r}
+dd = read.csv("geyser.txt", sep = " ", header = TRUE)
 
+dur.cdens = npcdens(duration ~ waiting, data = dd)
 
+grid = expand.grid(waiting = seq(min(dd$waiting), max(dd$waiting), 1), duration = seq(min(dd$duration), max(dd$duration), 0.1))
 
+f.hat = predict(dur.cdens, newdata = grid)
 
+wireframe(f.hat ~ grid$waiting * grid$duration, xlab = "Waiting Time", ylab = "Duration", zlab = "f")
 
+grid2 = expand.grid(waiting = seq(min(dd$waiting), max(dd$waiting), 10), duration = seq(min(dd$duration), max(dd$duration), 0.1))
+f.hat2 = predict(dur.cdens, newdata = grid2)
+predict.df = data.frame(grid2, density = f.hat2)
+ggplot(predict.df, aes(x = duration, y = density, group = waiting, color = waiting)) + geom_line()
 
+```
 
+These plots indicate that the probablilty density changes for various levels of the predictor variable. Specifically that for higher levels of waiting time the density function for the duration shows higher probablilties for lower duration. Similarly as the waiting time increases the density function shifts to give higher probabilities to shorter durations.
 
+**(b) Plot a conditional density estimate of waiting time given the previous eruption duration. (You'll have to manipulate the data to get the previous duration to line up with the following waiting time.) Describe what your plot tells you.**
 
+```{r}
+dd = read.csv("geyser.txt", sep = " ", header = TRUE)
 
+shift <- function(x, n){
+  c(x[-(seq(n))], rep(NA, n))
+}
 
+dd$waiting <- shift(dd$waiting, 1)
+
+dd = head(dd,-1)
+
+wait.cdens = npcdens(waiting ~ duration, data = dd)
+
+grid = expand.grid(duration = seq(min(dd$duration), max(dd$duration), .1), waiting = seq(min(dd$waiting), max(dd$waiting), 1))
+
+f.hat = predict(wait.cdens, newdata = grid)
+
+wireframe(f.hat ~ grid$duration * grid$waiting, xlab = "Previous Duration", ylab = "Waiting Time", zlab = "f")
+
+grid2 = expand.grid(duration = seq(min(dd$duration), max(dd$duration), .5), waiting = seq(min(dd$waiting), max(dd$waiting), 0.1))
+f.hat2 = predict(wait.cdens, newdata = grid2)
+predict.df = data.frame(grid2, density = f.hat2)
+ggplot(predict.df, aes(x = waiting, y = density, group = duration, color = duration)) + geom_line()
+
+```
+
+These plots indicate that the probablilty density changes for various levels of the predictor variable. Specifically that for higher levels of previous duration the density function for the waiting time shows higher probablilties for longer waiting times. Similarly as the previous duration decreases the density function shifts to give higher probabilities to shorter waiting times.
